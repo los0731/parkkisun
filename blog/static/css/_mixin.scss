@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,900|Roboto+Mono:100,300,400,500,700|Noto+Sans+KR:100,300,400,500,700,900&display=swap');
+
+@mixin transition($transition-duration:.08s, $transition-property:all, $transition-timing-function:ease-in-out, $transition-delay:initial) {
+  transition-duration: $transition-duration;
+  transition-property: $transition-property;
+  transition-timing-function: $transition-timing-function;
+  transition-delay: $transition-delay;
+}
+
+@mixin font-size-base {
+  font-size: 16px;
+}
+
+@mixin font-default {
+  font-family: "Heebo","Inter", 'Noto Sans KR', "Helvetica Neue", Helvetica, Arial, "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif, "Apple Color Emoji", "Noto Color Emoji";
+}
+
+@mixin font-mono {
+  font-family: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace, "맑은 고딕", malgun gothic, "돋움", Dotum, Sans-Serif;
+}
+
+@mixin h1 {
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: -0.009em;
+  @media ($md-down) {
+    font-size: 36px;
+  }
+  @media ($sm-down) {
+    font-size: 32px;
+  }
+}
+
+@mixin h2 {
+  font-size: 32px;
+  line-height: 1.4;
+  letter-spacing: -0.009em;
+  @media ($md-down) {
+    font-size: 28px;
+  }
+  @media ($sm-down) {
+    font-size: 24px;
+  }
+}
+
+@mixin h3 {
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: -0.009em;
+  @media ($md-down) {
+    font-size: 24px;
+  }
+  @media ($sm-down) {
+    font-size: 22px;
+  }
+}
+
+@mixin h4 {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: -0.009em;
+  @media ($md-down) {
+    font-size: 18px;
+  }
+}
+
+@mixin h5 {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.009em;
+  @media ($md-down) {
+    font-size: 15px;
+  }
+}
+
+@mixin h6 {
+  font-size: 14px;
+  line-height: 1.5;
+  @media ($md-down) {
+    font-size: 13px;
+  }
+}
+
+@mixin h7 {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@mixin paragraph {
+  letter-spacing: -0.009em;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@mixin container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@mixin container-sm {
+  @include container;
+  @media ($sm-up) {
+    max-width: 576px;
+  }
+}
+
+@mixin container-md {
+  @include container-sm;
+  @media ($md-up) {
+    max-width: 768px;
+  }
+}
+
+@mixin container-lg {
+  @include container-md;
+  @media ($lg-up) {
+    max-width: 992px;
+  }
+}
+
+@mixin container-xl {
+  @include container-lg;
+  @media ($xl-up) {
+    max-width: 1200px;
+  }
+}
+
+@mixin container-xxl {
+  @include container-xl;
+  @media ($xxl-up) {
+    max-width: 1600px;
+  }
+}
+
+@mixin container-xxxl {
+  @include container-xxl;
+  @media ($xxxl-up) {
+    max-width: 2000px;
+  }
+}
+
+@mixin container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 100%;
+}
+
+@mixin list-style-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
