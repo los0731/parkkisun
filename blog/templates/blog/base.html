@@ -18,9 +18,6 @@
           <a href="/">01235</a>
         </h1>
 
-        {% if user.is_authenticated %}
-          <a href="{% url 'post_new' %}" class="">글 작성</a>
-        {% endif %}
     
     
         {% block content %}
