@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,900|Roboto+Mono:100,300,400,500,700|Noto+Sans+KR:100,300,400,500,700,900&display=swap');
 
-@mixin transition($transition-duration:.08s, $transition-property:all, $transition-timing-function:ease-in-out, $transition-delay:initial) {
+@mixin transition($transition-duration:.16s, $transition-property:all, $transition-timing-function:ease-in-out, $transition-delay:initial) {
   transition-duration: $transition-duration;
   transition-property: $transition-property;
   transition-timing-function: $transition-timing-function;
@@ -20,84 +20,55 @@
 }
 
 @mixin h1 {
-  font-size: 40px;
+  font-size: 64px;
   line-height: 1.4;
-  letter-spacing: -0.009em;
-  @media ($md-down) {
-    font-size: 36px;
-  }
-  @media ($sm-down) {
-    font-size: 32px;
-  }
+  word-spacing: -8px;
 }
 
 @mixin h2 {
-  font-size: 32px;
+  font-size: 48px;
   line-height: 1.4;
-  letter-spacing: -0.009em;
-  @media ($md-down) {
-    font-size: 28px;
-  }
-  @media ($sm-down) {
-    font-size: 24px;
-  }
+  word-spacing: -4px;
 }
 
 @mixin h3 {
-  font-size: 26px;
+  font-size: 32px;
   line-height: 1.4;
-  letter-spacing: -0.009em;
-  @media ($md-down) {
-    font-size: 24px;
-  }
-  @media ($sm-down) {
-    font-size: 22px;
-  }
+  word-spacing: -2px;
 }
 
 @mixin h4 {
-  font-size: 20px;
-  line-height: 1.6;
-  letter-spacing: -0.009em;
-  @media ($md-down) {
-    font-size: 18px;
-  }
+  font-size: 24px;
+  line-height: 1.4;
 }
 
 @mixin h5 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
-  letter-spacing: -0.009em;
-  @media ($md-down) {
-    font-size: 15px;
-  }
 }
 
 @mixin h6 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  @media ($md-down) {
-    font-size: 13px;
-  }
 }
 
 @mixin h7 {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
 @mixin paragraph {
-  letter-spacing: -0.009em;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.8;
+  word-spacing: -1px;
 }
 
 @mixin container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 @mixin container-sm {
@@ -108,35 +79,35 @@
 }
 
 @mixin container-md {
-  @include container-sm;
+  @include container;
   @media ($md-up) {
     max-width: 768px;
   }
 }
 
 @mixin container-lg {
-  @include container-md;
+  @include container;
   @media ($lg-up) {
     max-width: 992px;
   }
 }
 
 @mixin container-xl {
-  @include container-lg;
+  @include container;
   @media ($xl-up) {
     max-width: 1200px;
   }
 }
 
 @mixin container-xxl {
-  @include container-xl;
+  @include container;
   @media ($xxl-up) {
     max-width: 1600px;
   }
 }
 
 @mixin container-xxxl {
-  @include container-xxl;
+  @include container;
   @media ($xxxl-up) {
     max-width: 2000px;
   }

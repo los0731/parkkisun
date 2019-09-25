@@ -23,13 +23,6 @@ $green-500: #4CAF50; //$color-success
 $green-700: #388E3C;
 $green-900: #1B5E20;
 
-$pink-50: #FCE4EC;
-$pink-100: #F8BBD0;
-$pink-200: #F48FB1;
-$pink-300: #F06292;
-$pink-500: #E91E63;
-$pink-700: #F06292;
-
 $red-25: #FCF5F3;
 $red-50: #FFEBEE;
 $red-75: #FFDDE0;
@@ -42,22 +35,6 @@ $red-900: #B71C1C;
 $red-950: #8A0D0D;
 $red-980: #630000;
 
-$purple-50: #F3E5F5;
-$purple-100: #E1BEE7;
-$purple-200: #CE93D8;
-$purple-300: #BA68C8;
-$purple-400: #AB47BC;
-$purple-500: #9C27B0;
-$purple-600: #8E24AA;
-$purple-700: #7B1FA2;
-$purple-800: #6A1B9A;
-$purple-900: #4A148C;
-
-$amber-300: #FFD54F;
-$amber-500: #FFC107;
-$amber-700: #FFA000;
-$amber-900: #FF6F00;
-
 $orange-50: #FFF3E0;
 $orange-100: #FFE0B2;
 $orange-200: #FFCC80;
@@ -66,27 +43,6 @@ $orange-400: #FFA726;
 $orange-500: #FF9800;
 $orange-700: #F57C00;
 $orange-900: #E65100;
-
-$deep-orange-50: #FBE9E7;
-$deep-orange-100: #FFCCBC;
-$deep-orange-200: #FFAB91;
-$deep-orange-300: #FF8A65;
-$deep-orange-400: #FF7043;
-$deep-orange-500: #FF5722; //$color-warning
-$deep-orange-700: #E64A19;
-$deep-orange-900: #BF360C;
-
-$deep-purple-50: #EDE7F6;
-$deep-purple-100: #D1C4E9;
-$deep-purple-200: #B39DDB;
-$deep-purple-300: #9575CD;
-$deep-purple-400: #7E57C2;
-$deep-purple-500: #673AB7; //$color-info
-$deep-purple-600: #5E35B1;
-$deep-purple-700: #512DA8;
-$deep-purple-800: #4527A0;
-$deep-purple-900: #311B92;
-$deep-purple-950: #051060;
 
 $indigo-300: #7986CB;
 $indigo-400: #5C6BC0;
@@ -100,31 +56,6 @@ $yellow-500: #FFEB3B;
 $yellow-700: #FBC02D;
 $yellow-900: #F57F17;
 
-$cyan-100: #B2EBF2;
-$cyan-300: #4DD0E1;
-$cyan-500: #26C6DA;
-$cyan-700: #0097A7;
-$cyan-900: #006064;
-
-$teal-50: #E0F2F1;
-$teal-100: #B2DFDB;
-$teal-200: #80CBC4;
-$teal-300: #4DB6AC;
-$teal-400: #26A69A;
-$teal-500: #009688;
-$teal-700: #00796B;
-$teal-900: #004D40;
-
-$brown-50: #EFEBE9;
-$brown-100: #D7CCC8;
-$brown-200: #BCAAA4;
-$brown-300: #A1887F;
-$brown-400: #8D6E63;
-$brown-500: #795548;
-$brown-500: #795548;
-$brown-700: #5D4037;
-$brown-900: #3E2723;
-
 $blue-50: #EEEBFF;
 $blue-75: #D8DDFF;
 $blue-100: #BBCAFB;
@@ -137,40 +68,31 @@ $blue-700: #0053F4;
 $blue-800: #0044E0;
 $blue-900: #0038AE;
 
-$light-blue-50 : #E1F5FE;
-$light-blue-100 : #B3E5FC;
-$light-blue-200 : #81D4FA;
-$light-blue-300 : #4FC3F7;
-$light-blue-400 : #29B6F6;
-$light-blue-500 : #03A9F4;
-$light-blue-600 : #039BE5;
-$light-blue-700 : #0288D1;
-$light-blue-800 : #0277BD;
-$light-blue-900 : #01579B;
+$blue-grey-10: #FBFBFF; //$color-background
+$blue-grey-25: #F5F5FB;
+$blue-grey-50: #EDEEF7; //$color-background:hover, $color-default, $color-code-background
+$blue-grey-75: #D9E4F1; //$color-border
+$blue-grey-100: #C9D3E7;
+$blue-grey-200: #B6C1DB;
+$blue-grey-300: #97A8C5; //$color-text-secondary
+$blue-grey-400: #7790AC;
+$blue-grey-500: #5E7F9B;
+$blue-grey-600: #4E6B87;
+$blue-grey-700: #435775; //$color-border--dark
+$blue-grey-800: #364866;
+$blue-grey-880: #2C405C;
+$blue-grey-900: #233552; //$color-code-background--dark, $color-text--primary
+$blue-grey-920: #1E2946; //$color-code-background--dark
+$blue-grey-940: #16223F;
+$blue-grey-990: #0E1830; //$color-border--dark
+$blue-grey-999: #0A1325;
 
-$blue-grey-10: #FBFBFD; //$color-background
-$blue-grey-25: #F7F7FB;
-$blue-grey-50: #E9ECF3; //$color-background:hover, $color-default, $color-code-background
-$blue-grey-75: #D7E2EB; //$color-border
-$blue-grey-100: #CDD7E0;
-$blue-grey-200: #B2C0CC;
-$blue-grey-300: #98A8B9; //$color-text-secondary
-$blue-grey-400: #7890A0;
-$blue-grey-500: #5F7F90;
-$blue-grey-600: #4F6B81;
-$blue-grey-700: #44576C; //$color-border--dark
-$blue-grey-800: #37485D;
-$blue-grey-880: #2D4053;
-$blue-grey-900: #263747; //$color-code-background--dark, $color-text--primary
-$blue-grey-920: #202B3D; //$color-code-background--dark
-$blue-grey-940: #172334;
-$blue-grey-990: #142029; //$color-border--dark
-$blue-grey-999: #0C151C;
-
+$color-background: #FCFBF5;
 $color-background: $blue-grey-10;
-$color-text--primary: $blue-grey-900;
-$color-text--secondary: $blue-grey-300;
-$color-border: $blue-grey-75;
+$color-background: #FBFBFD;
+$color-text--primary: $blue-grey-800;
+$color-text--secondary: $blue-grey-500;
+$color-border: $blue-grey-100;
 $color-border--hover: $blue-grey-200;
 $color-code-background: $blue-grey-50;
 $color-code-background--dark: $blue-grey-900;
