@@ -7,13 +7,14 @@ from django.shortcuts import redirect
 
 
 def index(request):
-    return render(request, 'blog/index.html')
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-created_date')
+    return render(request, 'blog/index.html', {'posts': posts[0:3]})
 
 def about(request):
     return render(request, 'blog/about.html')
 
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('created_date')
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-created_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):

@@ -1,8 +1,51 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<div class="hero">
 
-</div>
+<ol class="list-index" >
+  <li class="list-item">
+    <h2 class="label">최신글</h2>
+    {% for post in posts %}
+    <div class="recent-posts">
+      <a href="#">{{ post.title }}</a>
+    </div>
+    {% endfor %}
+  </li>
 
+  <li class="list-item project">
+    <div class="row">
+      <div class="col col-12 col-xl-6">
+        <h2 class="label number"></h2>
+        <h2 class="title">
+          Programmers
+        </h2>
+      </div>
+
+      <div class="col col-12 col-xl-6">
+        <h2 class="label">―</h2>
+        <h4 class="summary">
+          프로그래머스는 개발자의 커리어를 위한 웹 서비스로 개발 역량 평가, 프로그래밍 연습, 개발자 잡 매칭 서비스를 제공하고 있습니다. 프로그래머스의 모든 UI 컴포넌트들은 디자인 가이드라인을 통해 개발자들과 공유되고 있습니다.
+        </h4>
+      </div>
+
+      <div class="col col-12">
+        <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514270942/gop-1-3-1_f3djvm.png" alt="">
+      </div>
+
+      <!--<div class="col col-12 col-xl-6">-->
+      <!--<img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514715257/html_lzxncm.png" alt="">-->
+      <!--</div>-->
+
+      <!--<div class="col col-12 col-xl-6">-->
+      <!--<h4 class="description">-->
+      <!--프로그래머스는 개발자의 커리어를 위한 웹 서비스로 개발 역량 평가, 프로그래밍 연습, 개발자 잡 매칭 서비스를 제공하고 있습니다. 프로그래머스의 모든 UI 컴포넌트들은 디자인 가이드라인을 통해 개발자들과 공유되고 있습니다.-->
+      <!--</h4>-->
+      <!--</div>-->
+
+      <div class="col col-12">
+        <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1514217896/%E1%84%8B%E1%85%B0%E1%86%B8_%E1%84%87%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%AE%E1%84%8C%E1%85%A5_wwwghk.png" alt="">
+      </div>
+    </div>
+  </li>
+</ol>
 {% endblock %}

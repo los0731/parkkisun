@@ -13,7 +13,7 @@
   </head>
   <body>
       <div class="container-xxl">
-        <nav>
+        <nav class="nav-application">
           <a class="nav-item nav-home" href="/">박기선</a>
           <a class="nav-item nav-menu" href="{% url 'about' %}">소개</a>
           <a class="nav-item nav-menu" href="{% url 'post_list' %}">글타래</a>
@@ -26,6 +26,13 @@
           <a href="/">
             2019 박기선
           </a>
+
+          {% if user.is_authenticated %}
+          <h6 class="text-signed">로그인 됨</h6>
+          {% else %}
+          <a href="/admin" class="float-right">로그인</a>
+          {% endif %}
+
 
         </footer>
       </div>
