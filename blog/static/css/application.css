@@ -494,9 +494,21 @@ blockquote {
     .container-xxxl {
       max-width: 2000px; } }
 
+.row {
+  margin-left: -24px;
+  margin-right: -24px; }
+  @media (min-width: 1600px) {
+    .row {
+      margin-left: -40px;
+      margin-right: -40px; } }
+
 .col {
-  padding-right: 16px;
-  padding-left: 16px; }
+  padding-right: 24px;
+  padding-left: 24px; }
+  @media (min-width: 1600px) {
+    .col {
+      padding-left: 40px;
+      padding-right: 40px; } }
 
 body {
   background-color: #FBFBFD;
@@ -520,11 +532,10 @@ footer {
     float: right; }
 
 .nav-application {
-  margin-top: 24px;
   padding: 16px 0;
   display: flex; }
   .nav-application .nav-item {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.8;
     display: inline-block;
     font-weight: 800;
@@ -536,6 +547,98 @@ footer {
     margin-right: auto; }
   .nav-application .nav-menu {
     padding-left: 24px; }
+
+.label {
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  color: #B6C1DB; }
+
+.recent-posts {
+  padding-top: 64px; }
+  .recent-posts a {
+    font-size: 48px;
+    line-height: 1.4;
+    word-spacing: -2px;
+    transition-duration: 0.16s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+    position: relative;
+    color: #364866;
+    margin-top: 16px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #364866; }
+    .recent-posts a::after {
+      transition-duration: 0.16s;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      transition-delay: initial;
+      content: '';
+      position: absolute;
+      height: 6px;
+      display: block;
+      background: #D9E4F1;
+      width: 100%;
+      left: 0;
+      bottom: 48%;
+      z-index: -1; }
+    .recent-posts a:hover {
+      color: #0078FF; }
+      .recent-posts a:hover::after {
+        bottom: 100%;
+        background: #3292FF; }
+
+.list-projects {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .list-projects .project-item {
+    counter-increment: item-counter;
+    padding-top: 160px; }
+  .list-projects .number::before {
+    content: "0" counter(item-counter) ". ";
+    padding-right: 4px;
+    margin-bottom: 8px; }
+  .list-projects a {
+    transition-duration: 0.16s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+    position: relative;
+    color: #364866; }
+    .list-projects a::after {
+      transition-duration: 0.16s;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      transition-delay: initial;
+      content: '';
+      position: absolute;
+      height: 6px;
+      display: block;
+      background: #D9E4F1;
+      width: 100%;
+      left: 0;
+      bottom: 48%;
+      z-index: -1; }
+    .list-projects a:hover {
+      color: #0078FF; }
+      .list-projects a:hover::after {
+        bottom: 100%;
+        background: #3292FF; }
+  .list-projects p, .list-projects img {
+    margin: 0 0 24px 0; }
+  .list-projects p {
+    font-size: 48px;
+    line-height: 1.4;
+    word-spacing: -2px;
+    font-weight: 500;
+    line-height: 1.8; }
+  .list-projects img {
+    width: 100%; }
 
 .about--hero {
   padding-top: 64px; }
@@ -563,7 +666,7 @@ footer {
       position: absolute;
       height: 6px;
       display: block;
-      background: #C9D3E7;
+      background: #D9E4F1;
       width: 100%;
       left: 0;
       bottom: 48%;
@@ -571,7 +674,7 @@ footer {
     .about--hero a:hover {
       color: #0078FF; }
       .about--hero a:hover::after {
-        bottom: 112%;
+        bottom: 100%;
         background: #3292FF; }
   @media (max-width: 1599px) {
     .about--hero br {
@@ -581,60 +684,11 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 64px; }
+  margin-top: 120px; }
   .about--items li {
     font-size: 20px;
     line-height: 1.8;
     line-height: 2.4;
     font-weight: 500; }
-
-.list-index {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-  .list-index .list-item {
-    padding-top: 64px;
-    counter-reset: item-counter 0;
-    counter-increment: item-counter; }
-    .list-index .list-item + .list-item {
-      padding-top: 160px; }
-  .list-index .label {
-    font-size: 24px;
-    line-height: 1.8;
-    font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    color: #B6C1DB; }
-  .list-index .recent-posts a {
-    font-size: 48px;
-    line-height: 1.4;
-    word-spacing: -2px;
-    margin-left: -2px;
-    display: block;
-    margin-top: 24px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #364866; }
-    .list-index .recent-posts a::after {
-      transition-duration: 0.16s;
-      transition-property: all;
-      transition-timing-function: ease-in-out;
-      transition-delay: initial;
-      font-family: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace, "맑은 고딕", malgun gothic, "돋움", Dotum, Sans-Serif;
-      content: '↗';
-      color: #B6C1DB;
-      font-size: 19px;
-      vertical-align: top; }
-    .list-index .recent-posts a:hover {
-      color: #0078FF; }
-      .list-index .recent-posts a:hover::after {
-        color: #0078FF; }
-  .list-index .project .number::before {
-    content: "0" counter(item-counter); }
-  .list-index .project .description {
-    margin-top: 40px;
-    margin-bottom: 80px; }
-  .list-index .project img {
-    width: 100%;
-    margin-top: 40px; }
 
 /*# sourceMappingURL=application.css.map */

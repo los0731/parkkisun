@@ -131,3 +131,31 @@
 @mixin margin-top--common {
   padding-top: 64px;
 }
+
+@mixin linkable-inline {
+  @include transition();
+  position: relative;
+  color: $color-text--primary;
+
+  &::after {
+    @include transition();
+    content: '';
+    position: absolute;
+    height: 6px;
+    display: block;
+    background: $blue-grey-75;
+    width: 100%;
+    left: 0;
+    bottom: 48%;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $color-primary;
+
+    &::after {
+      bottom: 100%;
+      background: $blue-400;
+    }
+  }
+}

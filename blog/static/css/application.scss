@@ -29,12 +29,11 @@ footer {
 }
 
 .nav-application {
-  margin-top: 24px;
   padding: 16px 0;
   display: flex;
 
   .nav-item {
-    @include h4;
+    @include h5;
     display: inline-block;
     font-weight: 800;
     -webkit-font-smoothing: antialiased;
@@ -55,6 +54,61 @@ footer {
   }
 }
 
+.label {
+  @include h5;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  color: $color-text--secondary;
+}
+
+.recent-posts {
+  padding-top: 64px;
+
+  a {
+    @include h2;
+    @include linkable-inline;
+    margin-top: 16px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.4;
+    color: $color-text--primary;
+  }
+}
+
+.list-projects {
+  @include list-style-none;
+
+  .project-item {
+    counter-increment: item-counter;
+    padding-top: 160px;
+  }
+
+  .number::before {
+    content: "0" counter(item-counter) ". ";
+    padding-right: 4px;
+    margin-bottom: 8px;
+  }
+
+  a {
+    @include linkable-inline;
+  }
+
+  p, img {
+    margin: 0 0 24px 0;
+  }
+
+  p {
+    @include h2;
+    font-weight: 500;
+    line-height: 1.8;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
+
 .about--hero {
   @include margin-top--common;
 
@@ -67,31 +121,7 @@ footer {
   }
 
   a {
-    @include transition();
-    position: relative;
-    color: $color-text--primary;
-
-    &::after {
-      @include transition();
-      content: '';
-      position: absolute;
-      height: 6px;
-      display: block;
-      background: $blue-grey-100;
-      width: 100%;
-      left: 0;
-      bottom: 48%;
-      z-index: -1;
-    }
-
-    &:hover {
-      color: $color-primary;
-
-      &::after {
-        bottom: 112%;
-        background: $blue-400;
-      }
-    }
+    @include linkable-inline;
   }
   
   br { @media ($xxl-down) {display: none;} }
@@ -99,7 +129,7 @@ footer {
 
 .about--items {
   @include list-style-none;
-  @include margin-top--common;
+  margin-top: 120px;
 
   li {
     @include h5;
@@ -108,70 +138,6 @@ footer {
   }
 }
 
-.list-index {
-  @include list-style-none;
 
-  .list-item {
-    padding-top: 64px;
-    counter-reset: item-counter 0;
-    counter-increment: item-counter;
-
-
-    & + .list-item {
-      padding-top: 160px;
-    }
-  }
-
-  .label {
-    @include h4;
-    font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    color: $color-text--secondary;
-  }
-
-  .recent-posts a {
-    @include h2;
-    margin-left: -2px;
-    display: block;
-    margin-top: 24px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: $color-text--primary;
-
-    &::after {
-      @include transition();
-      @include font-mono;
-      content: '↗';
-      color: $blue-grey-200;
-      font-size: 19px;
-      vertical-align: top;
-    }
-
-
-    &:hover {
-      color: $color-primary;
-
-      &::after {
-        color: $color-primary;
-      }
-    }
-  }
-
-  .project {
-    .number::before {
-      content: "0" counter(item-counter);
-    }
-
-    .description {
-      margin-top: 40px;
-      margin-bottom: 80px;
-    }
-
-    img {
-      width: 100%;
-      margin-top: 40px;
-    }
-  }
-}
 
 
