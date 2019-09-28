@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
+import markdown
 
 
 class Post(models.Model):
@@ -15,6 +16,10 @@ class Post(models.Model):
     def publish(self):
         self.published_date = timezone.now()
         self.save()
+
+    @property
+    def rendered_html(self):
+        return markdown.markdown(self.text)
 
     def __str__(self):
         return self.title

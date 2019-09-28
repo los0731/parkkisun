@@ -132,19 +132,19 @@
   padding-top: 64px;
 }
 
-@mixin linkable-inline($underline: 3px, $color: $color-primary) {
+@mixin linkable-inline($underline: 3px, $line-color: $color-primary) {
   @include transition();
   position: relative;
   display: inline;
   color: $color-text--primary;
-  box-shadow: 0 $underline $color;
+  box-shadow: 0 $underline $line-color;
 
   &:hover {
     color: $color-primary;
-    box-shadow: 0 0 $color-primary;
+    box-shadow: 0 0 $line-color;
   }
 
   @media ($lg-down) {
-    box-shadow: 0 calc(#{$underline} - 1px) $color;
+    box-shadow: 0 calc(#{$underline} - 1px) $line-color;
   }
 }

@@ -1,14 +1,20 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">내용 수정</a>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+<div class="post-detail ">
+  <h2 class="title">{{ post.title }}</h2>
+
+  {% if post.published_date %}
+  <h6 class="date">
+    {{ post.published_date }}
+
+    <a class="btn-edit" href="{% url 'post_edit' pk=post.pk %}">내용 수정</a>
+  </h6>
+  {% endif %}
+
+  <div class="markdown">
+    {{ post.rendered_html|safe }}
+  </div>
+
+</div>
 {% endblock %}
