@@ -10,7 +10,6 @@ footer {
   padding: 16px 0;
   margin-top: 120px;
 
-
   a, h6 {
     @include h6;
     font-weight: 700;
@@ -50,6 +49,10 @@ footer {
     font-weight: 700;
     color: $color-text--primary;
 
+    @media ($lg-down) {
+      @include h6;
+    }
+
     &:hover {
       color: $color-primary;
     }
@@ -70,6 +73,7 @@ footer {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   color: $color-text--secondary;
+  margin-bottom: 8px;
 
   @media ($lg-down) {
     @include h6;
@@ -119,16 +123,10 @@ footer {
     }
   }
 
-  .number {
-    margin-bottom: 8px;
-
-    &::before {
-      content: "0" counter(item-counter) ". ";
-      padding-right: 4px;
-    }
+  .number ::before {
+    content: "0" counter(item-counter) ". ";
+    padding-right: 2px;
   }
-
-
 
   a {
     @include linkable-inline;
@@ -156,7 +154,6 @@ footer {
   img {
     width: 100%;
   }
-
 }
 
 .about--hero {
@@ -194,7 +191,7 @@ footer {
     @media ($lg-down) {
       @include h6;
       position: relative;
-      line-height: 1.8;
+      line-height: 1.4;
       padding-left: 14px;
 
       &:before {
@@ -204,13 +201,12 @@ footer {
         position: absolute;
         border-radius: 100px;
         border: 1px solid $color-text--primary;
-        left: 0px;
+        left: 0;
         top: 12px;
       }
 
       sup {
         @include h6;
-        line-height: 1;
         display: block;
         margin-bottom: 8px;
         top: unset;
