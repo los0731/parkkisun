@@ -511,7 +511,7 @@ blockquote {
       padding-right: 40px; } }
 
 body {
-  background-color: #fff;
+  background-color: white;
   word-break: keep-all; }
 
 footer {
@@ -588,10 +588,10 @@ footer {
     @media (min-width: 992px) {
       .recent-posts a {
         color: #364866;
-        box-shadow: inset 0 0.55em #fff, inset 0 0.65em #D9E4F1; }
+        box-shadow: inset 0 0.55em white, inset 0 0.65em #D9E4F1; }
         .recent-posts a:hover {
           color: #0078FF;
-          box-shadow: inset 0 0 #fff, inset 0 0.1em #0078FF; } }
+          box-shadow: inset 0 0 white, inset 0 0.1em #0078FF; } }
     @media (max-width: 991px) {
       .recent-posts a {
         display: inline-block;
@@ -639,22 +639,21 @@ footer {
     @media (min-width: 992px) {
       .list-projects a {
         color: #364866;
-        box-shadow: inset 0 0.55em #fff, inset 0 0.65em #D9E4F1; }
+        box-shadow: inset 0 0.55em white, inset 0 0.65em #D9E4F1; }
         .list-projects a:hover {
           color: #0078FF;
-          box-shadow: inset 0 0 #fff, inset 0 0.1em #0078FF; } }
+          box-shadow: inset 0 0 white, inset 0 0.1em #0078FF; } }
     @media (max-width: 991px) {
       .list-projects a {
         display: inline-block;
         color: #0078FF; }
         .list-projects a:hover {
           color: #0053F4; } }
-  .list-projects p, .list-projects img {
-    margin: 0 0 24px 0; }
   .list-projects p {
     font-size: 48px;
     line-height: 1.4;
     word-spacing: -2px;
+    margin: 0 0 40px 0;
     font-weight: 500;
     line-height: 1.8; }
     @media (max-width: 1199px) {
@@ -669,6 +668,7 @@ footer {
         line-height: 1.8;
         word-spacing: -1px; } }
   .list-projects img {
+    margin: 0 0 24px 0;
     width: 100%; }
 
 .about--hero {
@@ -696,10 +696,10 @@ footer {
     @media (min-width: 992px) {
       .about--hero a {
         color: #364866;
-        box-shadow: inset 0 0.55em #fff, inset 0 0.65em #D9E4F1; }
+        box-shadow: inset 0 0.55em white, inset 0 0.65em #D9E4F1; }
         .about--hero a:hover {
           color: #0078FF;
-          box-shadow: inset 0 0 #fff, inset 0 0.1em #0078FF; } }
+          box-shadow: inset 0 0 white, inset 0 0.1em #0078FF; } }
     @media (max-width: 991px) {
       .about--hero a {
         display: inline-block;
