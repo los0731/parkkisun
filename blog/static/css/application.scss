@@ -7,11 +7,19 @@ body {
 }
 
 footer {
-  @include h6;
-  font-weight: 700;
-  border-top: 1px solid $color-border;
   padding: 16px 0;
   margin-top: 120px;
+
+
+  a, h6 {
+    @include h6;
+    font-weight: 700;
+
+    @media ($lg-down) {
+      @include h7;
+    }
+  }
+
 
   a {
     color: $color-text--primary;
@@ -32,11 +40,14 @@ footer {
   padding: 16px 0;
   display: flex;
 
+  @media ($lg-down) {
+    padding: 8px 0;
+  }
+
   .nav-item {
     @include h5;
     display: inline-block;
-    font-weight: 800;
-    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
     color: $color-text--primary;
 
     &:hover {
@@ -59,6 +70,10 @@ footer {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   color: $color-text--secondary;
+
+  @media ($lg-down) {
+    @include h6;
+  }
 }
 
 .recent-posts {
@@ -67,11 +82,28 @@ footer {
   a {
     @include h2;
     @include linkable-inline;
-    margin-top: 16px;
-    display: inline-block;
     font-weight: 500;
     line-height: 1.4;
     color: $color-text--primary;
+
+    @media ($xl-down) {
+      @include h3;
+    }
+
+    @media ($lg-up) {
+      &:after {
+        content: '';
+        display: block;
+        height: 16px;
+      }
+    }
+
+    @media ($lg-down) {
+      @include h5;
+      display: block;
+      margin-top: 16px;
+      line-height: 1.4;
+    }
   }
 }
 
@@ -81,13 +113,22 @@ footer {
   .project-item {
     counter-increment: item-counter;
     padding-top: 160px;
+
+    @media ($lg-down) {
+      padding-top: 80px;
+    }
   }
 
-  .number::before {
-    content: "0" counter(item-counter) ". ";
-    padding-right: 4px;
+  .number {
     margin-bottom: 8px;
+
+    &::before {
+      content: "0" counter(item-counter) ". ";
+      padding-right: 4px;
+    }
   }
+
+
 
   a {
     @include linkable-inline;
@@ -101,6 +142,15 @@ footer {
     @include h2;
     font-weight: 500;
     line-height: 1.8;
+
+    @media ($xl-down) {
+      @include h3;
+      line-height: 1.8;
+    }
+
+    @media ($lg-down) {
+      @include paragraph;
+    }
   }
 
   img {
@@ -116,6 +166,11 @@ footer {
     @include h2;
     font-weight: 500;
     line-height: 1.6;
+
+    @media ($lg-down) {
+      @include h5;
+      line-height: 1.8;
+    }
 
     & + .introduce {margin-top: 40px;}
   }
@@ -135,6 +190,34 @@ footer {
     @include h5;
     line-height: 2.4;
     font-weight: 500;
+
+    @media ($lg-down) {
+      @include h6;
+      position: relative;
+      line-height: 1.8;
+      padding-left: 14px;
+
+      &:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        border-radius: 100px;
+        border: 1px solid $color-text--primary;
+        left: 0px;
+        top: 12px;
+      }
+
+      sup {
+        @include h6;
+        line-height: 1;
+        display: block;
+        margin-bottom: 8px;
+        top: unset;
+        color: $color-text--secondary;
+        font-weight: 400;
+      }
+    }
   }
 }
 
