@@ -609,47 +609,40 @@ footer {
     transition-delay: initial;
     position: relative;
     display: inline;
+    color: #364866;
+    box-shadow: 0 3px #0078FF;
     font-weight: 500;
     line-height: 1.4;
     color: #364866; }
-    @media (min-width: 992px) {
-      .recent-posts a {
-        color: #364866; }
-        .recent-posts a:hover {
-          color: #0078FF;
-          box-shadow: 0 -3px #0078FF; } }
+    .recent-posts a:hover {
+      color: #0078FF;
+      box-shadow: 0 0 #0078FF; }
     @media (max-width: 991px) {
       .recent-posts a {
-        display: inline-block;
-        color: #0078FF; }
-        .recent-posts a:hover {
-          color: #0053F4; } }
+        box-shadow: 0 calc(3px - 1px) #0078FF; } }
+    .recent-posts a:before {
+      content: '';
+      display: block;
+      height: 16px; }
     @media (max-width: 1199px) {
       .recent-posts a {
         font-size: 36px;
         line-height: 1.4;
         word-spacing: -2px; } }
-    @media (min-width: 992px) {
-      .recent-posts a:before {
-        content: '';
-        display: block;
-        height: 16px; } }
     @media (max-width: 991px) {
       .recent-posts a {
         font-size: 20px;
         line-height: 1.8;
-        display: block;
         margin-top: 16px;
         line-height: 1.4; } }
+
+.posts {
+  padding-top: 64px; }
 
 .list-posts {
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-top: 126px; }
-  @media (max-width: 991px) {
-    .list-posts {
-      margin-top: 108px; } }
+  margin: 0; }
   .list-posts li {
     position: relative;
     margin-bottom: 16px; }
@@ -662,27 +655,26 @@ footer {
     transition-delay: initial;
     position: relative;
     display: inline;
+    color: #364866;
+    box-shadow: 0 3px #C9D3E7;
     font-weight: 500;
     line-height: 1.4;
     position: relative;
     word-spacing: -2px; }
-    @media (min-width: 992px) {
-      .list-posts a {
-        color: #364866; }
-        .list-posts a:hover {
-          color: #0078FF;
-          box-shadow: 0 -3px #0078FF; } }
+    .list-posts a:hover {
+      color: #0078FF;
+      box-shadow: 0 0 #0078FF; }
     @media (max-width: 991px) {
       .list-posts a {
-        display: inline-block;
-        color: #0078FF; }
-        .list-posts a:hover {
-          color: #0053F4; } }
+        box-shadow: 0 calc(3px - 1px) #C9D3E7; } }
+    .list-posts a:before {
+      content: '';
+      display: block;
+      height: 16px; }
     @media (max-width: 991px) {
       .list-posts a {
         font-size: 20px;
         line-height: 1.8;
-        display: block;
         margin-top: 16px;
         line-height: 1.4;
         color: #364866; }
@@ -708,19 +700,15 @@ footer {
     transition-timing-function: ease-in-out;
     transition-delay: initial;
     position: relative;
-    display: inline; }
-    @media (min-width: 992px) {
-      .list-projects a {
-        color: #364866; }
-        .list-projects a:hover {
-          color: #0078FF;
-          box-shadow: 0 -3px #0078FF; } }
+    display: inline;
+    color: #364866;
+    box-shadow: 0 3px #0078FF; }
+    .list-projects a:hover {
+      color: #0078FF;
+      box-shadow: 0 0 #0078FF; }
     @media (max-width: 991px) {
       .list-projects a {
-        display: inline-block;
-        color: #0078FF; }
-        .list-projects a:hover {
-          color: #0053F4; } }
+        box-shadow: 0 calc(3px - 1px) #0078FF; } }
   .list-projects p {
     font-size: 48px;
     line-height: 1.4;
@@ -772,19 +760,15 @@ footer {
     transition-timing-function: ease-in-out;
     transition-delay: initial;
     position: relative;
-    display: inline; }
-    @media (min-width: 992px) {
-      .about--hero a {
-        color: #364866; }
-        .about--hero a:hover {
-          color: #0078FF;
-          box-shadow: 0 -3px #0078FF; } }
+    display: inline;
+    color: #364866;
+    box-shadow: 0 3px #0078FF; }
+    .about--hero a:hover {
+      color: #0078FF;
+      box-shadow: 0 0 #0078FF; }
     @media (max-width: 991px) {
       .about--hero a {
-        display: inline-block;
-        color: #0078FF; }
-        .about--hero a:hover {
-          color: #0053F4; } }
+        box-shadow: 0 calc(3px - 1px) #0078FF; } }
   @media (max-width: 1599px) {
     .about--hero br {
       display: none; } }

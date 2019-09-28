@@ -1,17 +1,18 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<div class="posts">
+  <h5 class="label">모든 글타래</h5>
+  <ul class="list-posts">
+    {% for post in posts %}
+    <li>
+      <a href="{% url 'post_detail' pk=post.pk %}">
+        {{ post.title }}
+      </a>
 
-<ul class="list-posts">
-  {% for post in posts %}
-  <li>
-    <a href="{% url 'post_detail' pk=post.pk %}">
-      {{ post.title }}
-    </a>
+    </li>
 
-  </li>
-
-  {% endfor %}
-</ul>
-
+    {% endfor %}
+  </ul>
+</div>
 {% endblock %}
