@@ -145,38 +145,35 @@ footer {
 
 .list-posts {
   @include list-style-none;
-  @include margin-top--common;
+  margin-top: 126px;
 
+  @media ($lg-down) {
+    margin-top: 108px;
+  }
 
   li {
     position: relative;
-    margin-bottom: 24px;
-
-    &:after {
-      content: '↗';
-      position: absolute;
-      color: $blue-grey-100;
-      bottom: 8px;
-      padding-left: 4px;
-
-      @media ($lg-down) {display: none;}
-    }
+    margin-bottom: 16px;
   }
-
-
 
   a {
     @include h4;
-    font-weight: 500;
     @include linkable-inline;
+    font-weight: 500;
     line-height: 1.4;
     position: relative;
+    word-spacing: -2px;
 
     @media ($lg-down) {
       @include h5;
       display: block;
       margin-top: 16px;
       line-height: 1.4;
+      color: $color-text--primary ;
+
+      &:hover {
+        color: $color-primary;
+      }
     }
   }
 }
@@ -232,7 +229,11 @@ footer {
 }
 
 .about--hero {
-  @include margin-top--common;
+  margin-top: 120px;
+
+  @media ($lg-down) {
+    margin-top: 104px;
+  }
 
   p {
     @include h2;
