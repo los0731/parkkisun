@@ -670,6 +670,11 @@ footer {
   .list-projects img {
     margin: 0 0 24px 0;
     width: 100%; }
+    @media (max-width: 991px) {
+      .list-projects img {
+        margin-left: -24px;
+        margin-bottom: 8px;
+        width: calc(100% + 48px); } }
 
 .about--hero {
   padding-top: 64px; }
