@@ -4,6 +4,8 @@
 body {
   background-color: $color-background;
   word-break: keep-all;
+  padding: 0;
+  margin: 0;
 }
 
 footer {
@@ -188,7 +190,7 @@ footer {
     line-height: 1.3;
 
     @media ($lg-down) {
-      @include h4;
+      @include h3;
     }
   }
 
@@ -301,15 +303,16 @@ footer {
 
       @media ($lg-down) {
         @include h6;
-        overflow: hidden;
-        -ms-text-overflow: ellipsis;
-        text-overflow: ellipsis;
       }
     }
 
     ul, ol {
       ul, ol, li + li {
         margin-top: 8px;
+        margin-bottom: 0;
+      }
+
+      p {
         margin-bottom: 0;
       }
     }
@@ -328,17 +331,19 @@ footer {
       background-color: $blue-grey-50;
       border: 0;
 
+      code {
+        line-height: 1.4;
+        display: inline-block;
+      }
+    }
+
+    pre {
       @media ($lg-down) {
         border-radius: 0;
         margin-left: -24px;
         margin-right: -24px;
         padding-left: 24px;
         padding-right: 24px;
-      }
-
-      code {
-        line-height: 1.4;
-        display: inline-block;
       }
     }
 

@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3854a942-0fe3-427b-a9b5-0c097712de22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/application.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/application.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/mixin.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/mixin.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/static/css/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/static/css/application.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/static/css/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/mixin.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +48,7 @@
           <entry key="css" value="239" />
           <entry key="html" value="5589" />
           <entry key="py" value="58" />
-          <entry key="scss" value="9390" />
+          <entry key="scss" value="9435" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -59,7 +56,7 @@
           <entry key="CSS" value="239" />
           <entry key="HTML" value="5589" />
           <entry key="PLAIN_TEXT" value="58" />
-          <entry key="SCSS" value="9390" />
+          <entry key="SCSS" value="9435" />
         </counts>
       </usages-collector>
     </session>
@@ -93,10 +90,9 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blog/static/css/application.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="249" column="5" lean-forward="true" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
+                <state relative-caret-position="519">
+                  <caret line="315" column="24" selection-start-line="315" selection-start-column="24" selection-end-line="315" selection-end-column="24" />
                   <folding>
-                    <element signature="e#50#116#0" />
                     <element signature="e#125#496#0" />
                     <element signature="e#176#270#0" />
                     <element signature="e#240#266#0" />
@@ -392,12 +388,12 @@
       <workItem from="1569584773289" duration="18000" />
       <workItem from="1569588731362" duration="19087000" />
       <workItem from="1569666577160" duration="4239000" />
-      <workItem from="1569682396221" duration="4179000" />
+      <workItem from="1569682396221" duration="4602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59765000" />
+    <option name="totallyTimeSpent" value="60188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="-14" width="1440" height="877" extended-state="6" />
@@ -568,10 +564,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/css/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="249" column="5" lean-forward="true" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
+        <state relative-caret-position="519">
+          <caret line="315" column="24" selection-start-line="315" selection-start-column="24" selection-end-line="315" selection-end-column="24" />
           <folding>
-            <element signature="e#50#116#0" />
             <element signature="e#125#496#0" />
             <element signature="e#176#270#0" />
             <element signature="e#240#266#0" />

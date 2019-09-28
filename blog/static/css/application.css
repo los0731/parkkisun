@@ -512,7 +512,9 @@ blockquote {
 
 body {
   background-color: white;
-  word-break: keep-all; }
+  word-break: keep-all;
+  padding: 0;
+  margin: 0; }
 
 footer {
   padding: 16px 0;
@@ -689,8 +691,9 @@ footer {
     line-height: 1.3; }
     @media (max-width: 991px) {
       .post-detail .title {
-        font-size: 24px;
-        line-height: 1.4; } }
+        font-size: 36px;
+        line-height: 1.4;
+        word-spacing: -2px; } }
   .post-detail .date {
     margin-top: 16px; }
     @media (max-width: 991px) {
@@ -776,12 +779,11 @@ footer {
       @media (max-width: 991px) {
         .post-detail .markdown p {
           font-size: 16px;
-          line-height: 1.8;
-          overflow: hidden;
-          -ms-text-overflow: ellipsis;
-          text-overflow: ellipsis; } }
+          line-height: 1.8; } }
     .post-detail .markdown ul ul, .post-detail .markdown ul ol, .post-detail .markdown ul li + li, .post-detail .markdown ol ul, .post-detail .markdown ol ol, .post-detail .markdown ol li + li {
       margin-top: 8px;
+      margin-bottom: 0; }
+    .post-detail .markdown ul p, .post-detail .markdown ol p {
       margin-bottom: 0; }
     .post-detail .markdown blockquote {
       font-size: 20px;
@@ -795,16 +797,16 @@ footer {
       font-family: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace, "맑은 고딕", malgun gothic, "돋움", Dotum, Sans-Serif;
       background-color: #EDEEF7;
       border: 0; }
-      @media (max-width: 991px) {
-        .post-detail .markdown code, .post-detail .markdown pre {
-          border-radius: 0;
-          margin-left: -24px;
-          margin-right: -24px;
-          padding-left: 24px;
-          padding-right: 24px; } }
       .post-detail .markdown code code, .post-detail .markdown pre code {
         line-height: 1.4;
         display: inline-block; }
+    @media (max-width: 991px) {
+      .post-detail .markdown pre {
+        border-radius: 0;
+        margin-left: -24px;
+        margin-right: -24px;
+        padding-left: 24px;
+        padding-right: 24px; } }
     .post-detail .markdown p:first-child, .post-detail .markdown p:first-child h1, .post-detail .markdown p:first-child h2, .post-detail .markdown p:first-child h3, .post-detail .markdown p:first-child h4, .post-detail .markdown p:first-child h5, .post-detail .markdown p:first-child h6, .post-detail .markdown p:first-child p, .post-detail .markdown p:first-child blockquote,
     .post-detail .markdown p:first-child ul, .post-detail .markdown p:first-child ol, .post-detail .markdown p:first-child pre, .post-detail .markdown p:first-child img, .post-detail .markdown hr:first-child, .post-detail .markdown hr:first-child h1, .post-detail .markdown hr:first-child h2, .post-detail .markdown hr:first-child h3, .post-detail .markdown hr:first-child h4, .post-detail .markdown hr:first-child h5, .post-detail .markdown hr:first-child h6, .post-detail .markdown hr:first-child p, .post-detail .markdown hr:first-child blockquote,
     .post-detail .markdown hr:first-child ul, .post-detail .markdown hr:first-child ol, .post-detail .markdown hr:first-child pre, .post-detail .markdown hr:first-child img {
