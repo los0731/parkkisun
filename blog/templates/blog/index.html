@@ -4,11 +4,13 @@
 
 <div class="recent-posts">
   <h6 class="label">최신글</h6>
-  <div class="posts">
+  <ul class="posts">
     {% for post in posts %}
-    <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+    <li>
+      <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+    </li>
     {% endfor %}
-  </div>
+  </ul>
 </div>
 
 <ol class="list-projects" >

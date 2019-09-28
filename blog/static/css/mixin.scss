@@ -139,11 +139,10 @@
 
   @media ($lg-up) {
     color: $color-text--primary;
-    box-shadow: inset 0 0.55em $color-background, inset 0 0.65em $blue-grey-75;
 
     &:hover {
       color: $color-primary;
-      box-shadow: inset 0 0 $color-background, inset 0 0.1em $color-primary;
+      box-shadow: 0 -3px $color-primary;
     }
   }
 

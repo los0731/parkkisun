@@ -56,6 +56,12 @@ footer {
     &:hover {
       color: $color-primary;
     }
+
+    &.btn-post-new {
+      color: $color-primary;
+
+      &:hover {color: $color-primary--hover;}
+    }
   }
 
   .nav-home {
@@ -64,6 +70,10 @@ footer {
 
   .nav-menu {
     padding-left: 24px;
+
+    @media ($lg-down) {
+      padding-left: 16px;
+    }
 
   }
 }
@@ -81,7 +91,29 @@ footer {
 }
 
 .recent-posts {
-  padding-top: 64px;
+  @include margin-top--common;
+
+  .posts {
+    @include list-style-none;
+  }
+  
+  li {
+    position: relative;
+    &:after {
+      @include h4;
+      content: '↗';
+      position: absolute;
+      color: $blue-grey-100;
+      bottom: 24px;
+      padding-left: 2px;
+
+      @media ($xl-down) {
+        bottom: 10px;
+      }
+
+      @media ($lg-down) {display: none;}
+    }
+  }
 
   a {
     @include h2;
@@ -95,12 +127,50 @@ footer {
     }
 
     @media ($lg-up) {
-      &:after {
+      &:before {
         content: '';
         display: block;
         height: 16px;
       }
     }
+
+    @media ($lg-down) {
+      @include h5;
+      display: block;
+      margin-top: 16px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.list-posts {
+  @include list-style-none;
+  @include margin-top--common;
+
+
+  li {
+    position: relative;
+    margin-bottom: 24px;
+
+    &:after {
+      content: '↗';
+      position: absolute;
+      color: $blue-grey-100;
+      bottom: 8px;
+      padding-left: 4px;
+
+      @media ($lg-down) {display: none;}
+    }
+  }
+
+
+
+  a {
+    @include h4;
+    font-weight: 500;
+    @include linkable-inline;
+    line-height: 1.4;
+    position: relative;
 
     @media ($lg-down) {
       @include h5;
@@ -186,7 +256,11 @@ footer {
 
 .about--items {
   @include list-style-none;
-  margin-top: 120px;
+  margin-top: 80px;
+
+  @media ($lg-down) {
+    margin-top: 40px;
+  }
 
   li {
     @include h5;

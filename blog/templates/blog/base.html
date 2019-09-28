@@ -17,6 +17,10 @@
           <a class="nav-item nav-home" href="/">박기선</a>
           <a class="nav-item nav-menu" href="{% url 'about' %}">소개</a>
           <a class="nav-item nav-menu" href="{% url 'post_list' %}">글타래</a>
+
+          {% if user.is_authenticated %}
+          <a class="nav-item nav-menu btn-post-new" href="{% url 'post_new' %}">글쓰기</a>
+          {% endif %}
         </nav>
 
         {% block content %}
