@@ -321,6 +321,14 @@ footer {
       @include h5;
       border-color: $color-border;
 
+      p {
+        margin-bottom: 0;
+      }
+
+      blockquote {
+        margin: 16px 0 0 0;
+      }
+
       @media ($lg-down) {
         @include h6;
       }
