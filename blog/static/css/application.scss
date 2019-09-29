@@ -144,7 +144,6 @@ footer {
 
 .list-recent-posts {
   @include list-style-none;
-  @include margin-top--common;
 }
 
 .list-projects {
@@ -264,6 +263,10 @@ footer {
       }
     }
   }
+}
+
+.posts {
+  @include margin-top--common;
 }
 
 .list-posts {

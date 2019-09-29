@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3854a942-0fe3-427b-a9b5-0c097712de22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/_varibales.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/_varibales.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/application.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/application.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/_varibales.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/_varibales.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/application.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/static/css/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +45,7 @@
           <entry key="css" value="239" />
           <entry key="html" value="6394" />
           <entry key="py" value="58" />
-          <entry key="scss" value="10301" />
+          <entry key="scss" value="10302" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -60,7 +53,7 @@
           <entry key="CSS" value="239" />
           <entry key="HTML" value="6394" />
           <entry key="PLAIN_TEXT" value="58" />
-          <entry key="SCSS" value="10301" />
+          <entry key="SCSS" value="10302" />
         </counts>
       </usages-collector>
     </session>
@@ -134,8 +127,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blog/static/css/application.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="242" column="41" selection-start-line="242" selection-start-column="41" selection-end-line="242" selection-end-column="41" />
+                <state relative-caret-position="297">
+                  <caret line="146" column="2" selection-start-line="146" selection-start-column="2" selection-end-line="146" selection-end-column="2" />
                   <folding>
                     <element signature="e#125#496#0" />
                     <element signature="e#176#270#0" />
@@ -163,7 +156,6 @@
                     <element signature="e#1788#1856#0" />
                     <element signature="e#1880#1906#0" />
                     <element signature="e#1930#2004#0" />
-                    <element signature="e#2019#2053#0" />
                     <element signature="e#2156#2278#0" />
                     <element signature="e#2242#2274#0" />
                     <element signature="e#2299#2373#0" />
@@ -347,8 +339,8 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_detail.html" />
         <option value="$PROJECT_DIR$/blog/static/css/_varibales.scss" />
-        <option value="$PROJECT_DIR$/blog/static/css/application.scss" />
         <option value="$PROJECT_DIR$/blog/templates/blog/index.html" />
+        <option value="$PROJECT_DIR$/blog/static/css/application.scss" />
       </list>
     </option>
   </component>
@@ -470,12 +462,12 @@
       <workItem from="1569584773289" duration="18000" />
       <workItem from="1569588731362" duration="19087000" />
       <workItem from="1569666577160" duration="4239000" />
-      <workItem from="1569682396221" duration="14158000" />
+      <workItem from="1569682396221" duration="14366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69744000" />
+    <option name="totallyTimeSpent" value="69952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="-14" width="1440" height="877" extended-state="6" />
@@ -637,10 +629,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="148" column="44" selection-start-line="148" selection-start-column="44" selection-end-line="148" selection-end-column="44" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#li#0;n#ol#0;n#!!top" />
+            <element signature="n#ul#0;n#li#0;n#ol#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#li#0;n#ol#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#li#0;n#ol#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#li#0;n#ol#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#li#0;n#ol#0;n#!!top" />
+            <element signature="n#li#1;n#ol#0;n#!!top" />
+            <element signature="n#div#0;n#li#1;n#ol#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#li#1;n#ol#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#li#2;n#ol#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#li#4;n#ol#0;n#!!top" />
+            <element signature="n#li#6;n#ol#0;n#!!top" />
+            <element signature="n#div#0;n#li#6;n#ol#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#li#6;n#ol#0;n#!!top" />
+            <element signature="n#li#7;n#ol#0;n#!!top" />
+            <element signature="n#div#0;n#li#7;n#ol#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#li#7;n#ol#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/css/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="242" column="41" selection-start-line="242" selection-start-column="41" selection-end-line="242" selection-end-column="41" />
+        <state relative-caret-position="297">
+          <caret line="146" column="2" selection-start-line="146" selection-start-column="2" selection-end-line="146" selection-end-column="2" />
           <folding>
             <element signature="e#125#496#0" />
             <element signature="e#176#270#0" />
@@ -668,7 +689,6 @@
             <element signature="e#1788#1856#0" />
             <element signature="e#1880#1906#0" />
             <element signature="e#1930#2004#0" />
-            <element signature="e#2019#2053#0" />
             <element signature="e#2156#2278#0" />
             <element signature="e#2242#2274#0" />
             <element signature="e#2299#2373#0" />
@@ -741,35 +761,6 @@
             <element signature="e#3895#4406#0" />
             <element signature="e#4008#4221#0" />
             <element signature="e#4233#4400#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="148" column="44" selection-start-line="148" selection-start-column="44" selection-end-line="148" selection-end-column="44" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#li#0;n#ol#0;n#!!top" />
-            <element signature="n#ul#0;n#li#0;n#ol#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#li#0;n#ol#0;n#!!top" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#li#0;n#ol#0;n#!!top" />
-            <element signature="n#li#1;n#ul#0;n#li#0;n#ol#0;n#!!top" />
-            <element signature="n#a#0;n#li#1;n#ul#0;n#li#0;n#ol#0;n#!!top" />
-            <element signature="n#li#1;n#ol#0;n#!!top" />
-            <element signature="n#div#0;n#li#1;n#ol#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#li#1;n#ol#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#li#2;n#ol#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#li#4;n#ol#0;n#!!top" />
-            <element signature="n#li#6;n#ol#0;n#!!top" />
-            <element signature="n#div#0;n#li#6;n#ol#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#li#6;n#ol#0;n#!!top" />
-            <element signature="n#li#7;n#ol#0;n#!!top" />
-            <element signature="n#div#0;n#li#7;n#ol#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#li#7;n#ol#0;n#!!top" />
           </folding>
         </state>
       </provider>
