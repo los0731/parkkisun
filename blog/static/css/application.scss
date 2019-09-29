@@ -142,8 +142,128 @@ footer {
   }
 }
 
-.posts {
+.list-recent-posts {
+  @include list-style-none;
   @include margin-top--common;
+}
+
+.list-projects {
+  @include list-style-none;
+
+  .project-item {
+    counter-increment: item-counter;
+    padding-top: 160px;
+
+    @media ($lg-down) {
+      padding-top: 80px;
+    }
+  }
+
+  .number ::before {
+    content: "0" counter(item-counter) ". ";
+    padding-right: 2px;
+  }
+
+  .content {
+    p {
+      @include h2;
+      margin: 0 0 40px 0;
+      font-weight: 500;
+      line-height: 1.8;
+
+      @media ($xl-down) {
+        @include h3;
+        line-height: 1.8;
+      }
+
+      @media ($lg-down) {
+        @include paragraph;
+      }
+
+      a {
+        @include linkable-inline;
+      }
+    }
+
+    img, video {
+      margin: 0 0 24px 0;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px $blue-100;
+      }
+
+      @media ($lg-down) {
+        margin-left: -24px;
+        margin-bottom: 8px;
+        width: calc(100% + 48px);
+
+      }
+    }
+  }
+
+  .list-links {
+    @include list-style-none;
+    font-size: 0;
+    text-align: center;
+    margin-top: 40px;
+
+    @media ($lg-down) {
+      margin-top: 24px;
+    }
+
+    .list-link-item {
+      @include h5;
+      display: inline-block;
+      vertical-align: top;
+      max-width: 240px;
+
+      & + .list-link-item {
+        margin-left: 24px;
+
+        @media ($lg-down) {
+          margin-left: 8px;
+        }
+      }
+
+      a {
+        display: block;
+        padding: 24px 32px 32px 32px;
+        border: 1px solid $color-border;
+        color: $color-text--primary;
+        border-radius: 3px;
+        text-align: center;
+
+        @media ($lg-down) {
+          padding: 16px 24px;
+        }
+
+        &:hover {
+          background-color: $blue-grey-25;
+        }
+      }
+
+      .thumb {
+        width: 160px;
+        margin-bottom: 0;
+
+        @media ($lg-down) {
+          width: 80px;
+        }
+      }
+
+      h6 {
+        @media ($lg-down) {
+          @include h7;
+        }
+
+        &::after {
+          content: ' ↗';
+        }
+      }
+    }
+  }
 }
 
 .list-posts {
@@ -360,56 +480,6 @@ footer {
       ul, ol, pre, img {
         margin-top: 0;
       }
-    }
-  }
-}
-
-.list-projects {
-  @include list-style-none;
-
-  .project-item {
-    counter-increment: item-counter;
-    padding-top: 160px;
-
-    @media ($lg-down) {
-      padding-top: 80px;
-    }
-  }
-
-  .number ::before {
-    content: "0" counter(item-counter) ". ";
-    padding-right: 2px;
-  }
-
-  a {
-    @include linkable-inline;
-  }
-
-  p {
-    @include h2;
-    margin: 0 0 40px 0;
-    font-weight: 500;
-    line-height: 1.8;
-
-    @media ($xl-down) {
-      @include h3;
-      line-height: 1.8;
-    }
-
-    @media ($lg-down) {
-      @include paragraph;
-    }
-  }
-
-  img {
-    margin: 0 0 24px 0;
-    width: 100%;
-
-    @media ($lg-down) {
-      margin-left: -24px;
-      margin-bottom: 8px;
-      width: calc(100% + 48px);
-
     }
   }
 }

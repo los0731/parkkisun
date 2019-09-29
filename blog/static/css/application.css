@@ -511,7 +511,7 @@ blockquote {
       padding-right: 40px; } }
 
 body {
-  background-color: white;
+  background-color: #FEFDFC;
   word-break: keep-all;
   padding: 0;
   margin: 0; }
@@ -638,8 +638,114 @@ footer {
         margin-top: 16px;
         line-height: 1.4; } }
 
-.posts {
+.list-recent-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   padding-top: 64px; }
+
+.list-projects {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .list-projects .project-item {
+    counter-increment: item-counter;
+    padding-top: 160px; }
+    @media (max-width: 991px) {
+      .list-projects .project-item {
+        padding-top: 80px; } }
+  .list-projects .number ::before {
+    content: "0" counter(item-counter) ". ";
+    padding-right: 2px; }
+  .list-projects .content p {
+    font-size: 48px;
+    line-height: 1.4;
+    word-spacing: -2px;
+    margin: 0 0 40px 0;
+    font-weight: 500;
+    line-height: 1.8; }
+    @media (max-width: 1199px) {
+      .list-projects .content p {
+        font-size: 36px;
+        line-height: 1.4;
+        word-spacing: -2px;
+        line-height: 1.8; } }
+    @media (max-width: 991px) {
+      .list-projects .content p {
+        font-size: 20px;
+        line-height: 1.8;
+        word-spacing: -1px; } }
+    .list-projects .content p a {
+      transition-duration: 0.16s;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      transition-delay: initial;
+      position: relative;
+      display: inline;
+      color: #364866;
+      box-shadow: 0 3px #0078FF; }
+      .list-projects .content p a:hover {
+        color: #0078FF;
+        box-shadow: 0 0 #0078FF; }
+      @media (max-width: 991px) {
+        .list-projects .content p a {
+          box-shadow: 0 calc(3px - 1px) #0078FF; } }
+  .list-projects .content img, .list-projects .content video {
+    margin: 0 0 24px 0;
+    width: 100%; }
+    .list-projects .content img:focus, .list-projects .content video:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px #BBCAFB; }
+    @media (max-width: 991px) {
+      .list-projects .content img, .list-projects .content video {
+        margin-left: -24px;
+        margin-bottom: 8px;
+        width: calc(100% + 48px); } }
+  .list-projects .list-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    text-align: center;
+    margin-top: 40px; }
+    @media (max-width: 991px) {
+      .list-projects .list-links {
+        margin-top: 24px; } }
+    .list-projects .list-links .list-link-item {
+      font-size: 20px;
+      line-height: 1.6;
+      display: inline-block;
+      vertical-align: top;
+      max-width: 240px; }
+      .list-projects .list-links .list-link-item + .list-link-item {
+        margin-left: 24px; }
+        @media (max-width: 991px) {
+          .list-projects .list-links .list-link-item + .list-link-item {
+            margin-left: 8px; } }
+      .list-projects .list-links .list-link-item a {
+        display: block;
+        padding: 24px 32px 32px 32px;
+        border: 1px solid #D9E4F1;
+        color: #364866;
+        border-radius: 3px;
+        text-align: center; }
+        @media (max-width: 991px) {
+          .list-projects .list-links .list-link-item a {
+            padding: 16px 24px; } }
+        .list-projects .list-links .list-link-item a:hover {
+          background-color: #F4F4FA; }
+      .list-projects .list-links .list-link-item .thumb {
+        width: 160px;
+        margin-bottom: 0; }
+        @media (max-width: 991px) {
+          .list-projects .list-links .list-link-item .thumb {
+            width: 80px; } }
+      @media (max-width: 991px) {
+        .list-projects .list-links .list-link-item h6 {
+          font-size: 13px;
+          line-height: 1.8; } }
+      .list-projects .list-links .list-link-item h6::after {
+        content: ' ↗'; }
 
 .list-posts {
   list-style: none;
@@ -815,61 +921,6 @@ footer {
     .post-detail .markdown p:first-child ul, .post-detail .markdown p:first-child ol, .post-detail .markdown p:first-child pre, .post-detail .markdown p:first-child img, .post-detail .markdown hr:first-child, .post-detail .markdown hr:first-child h1, .post-detail .markdown hr:first-child h2, .post-detail .markdown hr:first-child h3, .post-detail .markdown hr:first-child h4, .post-detail .markdown hr:first-child h5, .post-detail .markdown hr:first-child h6, .post-detail .markdown hr:first-child p, .post-detail .markdown hr:first-child blockquote,
     .post-detail .markdown hr:first-child ul, .post-detail .markdown hr:first-child ol, .post-detail .markdown hr:first-child pre, .post-detail .markdown hr:first-child img {
       margin-top: 0; }
-
-.list-projects {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-  .list-projects .project-item {
-    counter-increment: item-counter;
-    padding-top: 160px; }
-    @media (max-width: 991px) {
-      .list-projects .project-item {
-        padding-top: 80px; } }
-  .list-projects .number ::before {
-    content: "0" counter(item-counter) ". ";
-    padding-right: 2px; }
-  .list-projects a {
-    transition-duration: 0.16s;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-delay: initial;
-    position: relative;
-    display: inline;
-    color: #364866;
-    box-shadow: 0 3px #0078FF; }
-    .list-projects a:hover {
-      color: #0078FF;
-      box-shadow: 0 0 #0078FF; }
-    @media (max-width: 991px) {
-      .list-projects a {
-        box-shadow: 0 calc(3px - 1px) #0078FF; } }
-  .list-projects p {
-    font-size: 48px;
-    line-height: 1.4;
-    word-spacing: -2px;
-    margin: 0 0 40px 0;
-    font-weight: 500;
-    line-height: 1.8; }
-    @media (max-width: 1199px) {
-      .list-projects p {
-        font-size: 36px;
-        line-height: 1.4;
-        word-spacing: -2px;
-        line-height: 1.8; } }
-    @media (max-width: 991px) {
-      .list-projects p {
-        font-size: 20px;
-        line-height: 1.8;
-        word-spacing: -1px; } }
-  .list-projects img {
-    margin: 0 0 24px 0;
-    width: 100%; }
-    @media (max-width: 991px) {
-      .list-projects img {
-        margin-left: -24px;
-        margin-bottom: 8px;
-        width: calc(100% + 48px); } }
 
 .about--hero {
   margin-top: 120px; }

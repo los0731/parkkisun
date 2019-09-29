@@ -56,7 +56,7 @@ $blue-700: #0053F4;
 $blue-800: #0044E0;
 $blue-900: #0038AE;
 
-$blue-grey-10: #FBFBFD; //$color-background
+$blue-grey-10: #FEFDFC; //$color-background
 $blue-grey-25: #F4F4FA;
 $blue-grey-50: #EDEEF7; //$color-background:hover, $color-default, $color-code-background
 $blue-grey-75: #D9E4F1; //$color-border
@@ -76,6 +76,7 @@ $blue-grey-990: #0E1830; //$color-border--dark
 $blue-grey-999: #0A1325;
 
 $color-background: white;
+$color-background: $blue-grey-10;
 $color-text--primary: $blue-grey-800;
 $color-text--secondary: $blue-grey-200;
 $color-border: $blue-grey-75;
