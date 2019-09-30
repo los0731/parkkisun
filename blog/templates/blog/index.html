@@ -14,7 +14,7 @@
 </div>
 
 <ol class="list-projects" >
-  <li class="project-item">
+  <li class="project-item" id="project_programmers">
     <h5 class="label number">Programmers</h5>
 
     <div class="content">
@@ -27,6 +27,7 @@
       <img src="{% static 'imgs/img-prgms-1.png' %}" alt="프로그래머스 첫번째 이미지">
       <img src="{% static 'imgs/img-prgms-3.png' %}" alt="프로그래머스 두번째 이미지">
       <img src="{% static 'imgs/img-prgms-2.png' %}" alt="프로그래머스 세번째 이미지">
+      <img src="{% static 'imgs/img-prgms-4.png' %}" alt="프로그래머스 세번째 이미지">
     </div>
 
     <ul class="list-links">
@@ -47,7 +48,7 @@
     </ul>
   </li>
 
-  <li class="project-item">
+  <li class="project-item" id="project_fs">
     <h5 class="label number">FS Search</h5>
 
     <div class="content">
@@ -60,20 +61,21 @@
     </div>
   </li>
 
-  <li class="project-item">
+  <li class="project-item" id="project_html">
     <h5 class="label number">Hands-On Projects for HTML & CSS</h5>
 
     <div class="content">
       <p class="description">
         2019년에 친구와 함께 온라인에서 직접 코드를 입력하면서 HTML/CSS 프로젝트를 진행할 수 있는 튜토리얼 코스를 만들었습니다.
-        이 튜토리얼 코스는 Beautiful Soup과 정규표현식을 통해 사용자가 코드를 옳게 작성했는지 체크합니다.
-        강의를 게재한 Next.xyz에는 작가 등록이 되어있습니다.
+        Beautiful Soup과 정규표현식으로 학습자의 코드가 옳은지 체크하는 테스트 케이스를 작성하여 학습자가 봇과 페이프로그래밍 하듯
+        프로젝트를 만들어나갈 수 있도록 했습니다. 강의를 게재한 Next.xyz에는 작가 등록이 되어있습니다.
       </p>
 
       <img src="{% static 'imgs/img-html-1.png' %}" alt="코스 이미지">
 
-      <video autoplay loop muted>
+      <video autoplay loop muted poster="{% static 'imgs/img-html-poster.png' %}">
         <source src="{% static 'imgs/video_html.webm' %}" type="video/webm"/>
+        <source src="{% static 'imgs/video_html.mp4' %}" type="video/mp4"/>
       </video>
     </div>
 
@@ -87,7 +89,7 @@
     </ul>
   </li>
 
-  <li class="project-item">
+  <li class="project-item" id="project_retrospin">
     <h5 class="label number">Retrospin</h5>
 
     <div class="content">
@@ -111,7 +113,7 @@
     </ul>
   </li>
 
-  <li class="project-item">
+  <li class="project-item" id="project_hashcode">
     <h5 class="label number">Hashcode</h5>
 
     <div class="content">
@@ -136,7 +138,7 @@
     </ul>
   </li>
 
-  <li class="project-item">
+  <li class="project-item" id="project_faces">
       <h5 class="label number">In your Face</h5>
 
     <div class="content">
@@ -150,19 +152,7 @@
     </div>
   </li>
 
-  <li class="project-item">
-    <h5 class="label number">Banana budget</h5>
-
-    <div class="content">
-      <p class="description">
-        저는 언제나 나와 비슷한 사람들은 매달 얼마나 쓰고 있는지 궁금했습니다.
-        따라서 다른 가계부 앱처럼 편리하게 지출 내역을 입력하면서
-        익명으로 다른 사람과 지출을 비교할 수 있는 가계부 앱의 콘셉트를 디자인했습니다.
-      </p>
-    </div>
-  </li>
-
-  <li class="project-item">
+  <li class="project-item" id="project_rmmbrit">
     <h5 class="label number">Rememberit</h5>
 
     <div class="content">
@@ -171,7 +161,22 @@
         크롬 익스텐션을 지원하는 Rememberit은 웹에서 모르는 단어를 바로 저장할 수 있고, cambridge 외
         6개의 주요 사전 서비스에서 직접 스크랩하도록 도와줍니다.
       </p>
+
+      <div class="rmmbrit-gif-wrap">
+        <img src="{% static 'imgs/img-rmmbrit-1.gif' %}" alt="리멤버잇 이미지 1">
+      </div>
+
+      <img src="{% static 'imgs/img-rmmbrit-2.png' %}" alt="리멤버잇 이미지 1">
     </div>
+
+    <ul class="list-links">
+      <li class="list-link-item">
+        <a href="https://goo.gl/QKICzU" target="_blank">
+          <img class="thumb" src="{% static 'imgs/thumb-extention.png' %}" alt="">
+          <h6>Chrome extension</h6>
+        </a>
+      </li>
+    </ul>
   </li>
 </ol>
 {% endblock %}

@@ -197,7 +197,24 @@ footer {
         margin-left: -24px;
         margin-bottom: 8px;
         width: calc(100% + 48px);
+      }
+    }
 
+    .rmmbrit-gif-wrap {
+      padding: 80px 240px;
+      background-color: #B8CADB;
+      margin: 0 0 24px 0;
+      width: 100%;
+
+      @media ($lg-down) {
+        padding: 40px 12vw;
+        margin-left: -24px;
+        margin-bottom: 8px;
+        width: calc(100% + 48px);
+      }
+
+      img {
+        box-shadow: 40px 60px 80px rgba(35,36,102,.12);
       }
     }
   }
@@ -553,6 +570,18 @@ footer {
         font-weight: 400;
       }
     }
+  }
+}
+
+.hyperlink-resume {
+  @include margin-top--common;
+
+  @media ($lg-down) {
+    @include h6;
+  }
+
+  a {
+    @include linkable-inline();
   }
 }
 

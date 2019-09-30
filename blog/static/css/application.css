@@ -700,6 +700,19 @@ footer {
         margin-left: -24px;
         margin-bottom: 8px;
         width: calc(100% + 48px); } }
+  .list-projects .content .rmmbrit-gif-wrap {
+    padding: 80px 240px;
+    background-color: #B8CADB;
+    margin: 0 0 24px 0;
+    width: 100%; }
+    @media (max-width: 991px) {
+      .list-projects .content .rmmbrit-gif-wrap {
+        padding: 40px 12vw;
+        margin-left: -24px;
+        margin-bottom: 8px;
+        width: calc(100% + 48px); } }
+    .list-projects .content .rmmbrit-gif-wrap img {
+      box-shadow: 40px 60px 80px rgba(35, 36, 102, 0.12); }
   .list-projects .list-links {
     list-style: none;
     padding: 0;
@@ -998,5 +1011,27 @@ footer {
           top: unset;
           color: #B6C1DB;
           font-weight: 400; } }
+
+.hyperlink-resume {
+  padding-top: 64px; }
+  @media (max-width: 991px) {
+    .hyperlink-resume {
+      font-size: 16px;
+      line-height: 1.8; } }
+  .hyperlink-resume a {
+    transition-duration: 0.16s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+    position: relative;
+    display: inline;
+    color: #364866;
+    box-shadow: 0 3px #0078FF; }
+    .hyperlink-resume a:hover {
+      color: #0078FF;
+      box-shadow: 0 0 #0078FF; }
+    @media (max-width: 991px) {
+      .hyperlink-resume a {
+        box-shadow: 0 calc(3px - 1px) #0078FF; } }
 
 /*# sourceMappingURL=application.css.map */
