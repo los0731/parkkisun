@@ -92,6 +92,10 @@ footer {
   }
 }
 
+.introduce {
+  @include h2;
+}
+
 .recent-posts {
   @include margin-top--common;
 
@@ -520,8 +524,6 @@ footer {
       @include h5;
       line-height: 1.8;
     }
-
-    & + .introduce {margin-top: 40px;}
   }
 
   a {

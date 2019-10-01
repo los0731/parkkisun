@@ -579,6 +579,11 @@ footer {
       font-size: 16px;
       line-height: 1.8; } }
 
+.introduce {
+  font-size: 48px;
+  line-height: 1.4;
+  word-spacing: -2px; }
+
 .recent-posts {
   padding-top: 64px; }
   .recent-posts .posts {
@@ -953,8 +958,6 @@ footer {
         font-size: 20px;
         line-height: 1.6;
         line-height: 1.8; } }
-    .about--hero p + .introduce {
-      margin-top: 40px; }
   .about--hero a {
     transition-duration: 0.16s;
     transition-property: all;
