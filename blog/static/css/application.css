@@ -697,13 +697,16 @@ footer {
       @media (max-width: 991px) {
         .list-projects .content p a {
           box-shadow: 0 calc(3px - 1px) #0078FF; } }
+  .list-projects .content .video-frame,
   .list-projects .content img, .list-projects .content video {
-    margin: 0 0 24px 0;
-    width: 100%; }
+    width: 100%;
+    margin: 0 0 24px 0; }
+    .list-projects .content .video-frame:focus,
     .list-projects .content img:focus, .list-projects .content video:focus {
       outline: none;
       box-shadow: 0 0 0 4px #BBCAFB; }
     @media (max-width: 991px) {
+      .list-projects .content .video-frame,
       .list-projects .content img, .list-projects .content video {
         margin-left: -24px;
         margin-bottom: 8px;
@@ -855,32 +858,49 @@ footer {
     padding: 0 16px; }
   .post-detail .markdown {
     padding-top: 64px; }
+    .post-detail .markdown .video-frame,
     .post-detail .markdown img {
       width: 100%;
       border-radius: 4px;
       margin-top: 40px;
       margin-bottom: 40px; }
       @media (max-width: 991px) {
+        .post-detail .markdown .video-frame,
         .post-detail .markdown img {
           margin-left: -24px;
           width: calc(100% + 48px);
           border-radius: 0; } }
       @media (min-width: 992px) {
+        .post-detail .markdown .video-frame,
         .post-detail .markdown img {
           margin-left: -80px;
           width: calc(100% + 160px); } }
       @media (min-width: 1200px) {
+        .post-detail .markdown .video-frame,
         .post-detail .markdown img {
           margin-left: -200px;
           width: calc(100% + 400px);
           margin-top: 56px;
           margin-bottom: 56px; } }
       @media (min-width: 1600px) {
+        .post-detail .markdown .video-frame,
         .post-detail .markdown img {
           margin-left: -456px;
           width: calc(100% + 912px);
           margin-top: 64px;
           margin-bottom: 64px; } }
+    @media (max-width: 991px) {
+      .post-detail .markdown .video-frame {
+        padding-bottom: 60.8%; } }
+    @media (min-width: 992px) {
+      .post-detail .markdown .video-frame {
+        padding-bottom: 68.8%; } }
+    @media (min-width: 1200px) {
+      .post-detail .markdown .video-frame {
+        padding-bottom: 86.5%; } }
+    @media (min-width: 1600px) {
+      .post-detail .markdown .video-frame {
+        padding-bottom: 124.4%; } }
     .post-detail .markdown h1, .post-detail .markdown h2, .post-detail .markdown h3, .post-detail .markdown h4, .post-detail .markdown h5 {
       margin-bottom: 16px; }
     .post-detail .markdown p, .post-detail .markdown ul, .post-detail .markdown ol, .post-detail .markdown pre {
@@ -1061,5 +1081,13 @@ footer {
     @media (max-width: 991px) {
       .hyperlink-resume a {
         box-shadow: 0 calc(3px - 1px) #0078FF; } }
+
+.video-frame {
+  position: relative;
+  padding-bottom: 57%; }
+  .video-frame iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=application.css.map */
