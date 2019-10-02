@@ -301,10 +301,24 @@ footer {
   li {
     position: relative;
     margin-bottom: 16px;
+    &:after {
+      @include h4;
+      content: '↗';
+      position: absolute;
+      color: $blue-grey-100;
+      bottom: 24px;
+      padding-left: 2px;
+
+      @media ($xl-down) {
+        bottom: 10px;
+      }
+
+      @media ($lg-down) {display: none;}
+    }
   }
 
   a {
-    @include h4;
+    @include h2;
     @include linkable-inline(3px, $blue-grey-100);
     font-weight: 500;
     line-height: 1.4;
@@ -315,6 +329,10 @@ footer {
       content: '';
       display: block;
       height: 16px;
+    }
+
+    @media ($xl-down) {
+      @include h3;
     }
 
     @media ($lg-down) {
