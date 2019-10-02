@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3854a942-0fe3-427b-a9b5-0c097712de22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/application.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/.sass-cache/7937095dc7d4b02f4151acf86c23c64b5ad04b09/application.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/application.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/static/css/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +14,7 @@
     <session id="1749705187">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.6" value="2" />
@@ -51,7 +45,7 @@
           <entry key="css" value="239" />
           <entry key="html" value="7063" />
           <entry key="py" value="58" />
-          <entry key="scss" value="10549" />
+          <entry key="scss" value="10559" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -59,7 +53,7 @@
           <entry key="CSS" value="239" />
           <entry key="HTML" value="7063" />
           <entry key="PLAIN_TEXT" value="58" />
-          <entry key="SCSS" value="10549" />
+          <entry key="SCSS" value="10559" />
         </counts>
       </usages-collector>
     </session>
@@ -102,8 +96,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blog/static/css/application.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="518">
-                  <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+                <state relative-caret-position="747">
+                  <caret line="212" column="16" lean-forward="true" selection-start-line="212" selection-start-column="6" selection-end-line="212" selection-end-column="16" />
                   <folding>
                     <element signature="e#50#143#0" />
                     <element signature="e#152#523#0" />
@@ -134,12 +128,10 @@
                     <element signature="e#1938#1964#0" />
                     <element signature="e#1988#2062#0" />
                     <element signature="e#2089#2120#0" />
-                    <element signature="e#2137#4481#0" />
                     <element signature="e#2184#2306#0" />
                     <element signature="e#2270#2302#0" />
                     <element signature="e#2317#2452#0" />
                     <element signature="e#2368#2448#0" />
-                    <element signature="e#2465#3424#0" />
                     <element signature="e#2473#2771#0" />
                     <element signature="e#2593#2649#0" />
                     <element signature="e#2675#2712#0" />
@@ -425,12 +417,12 @@
       <workItem from="1569682396221" duration="19665000" />
       <workItem from="1569937543518" duration="790000" />
       <workItem from="1569977203774" duration="2104000" />
-      <workItem from="1569993398500" duration="494000" />
+      <workItem from="1569993398500" duration="782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78639000" />
+    <option name="totallyTimeSpent" value="78927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
@@ -601,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/css/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+        <state relative-caret-position="747">
+          <caret line="212" column="16" lean-forward="true" selection-start-line="212" selection-start-column="6" selection-end-line="212" selection-end-column="16" />
           <folding>
             <element signature="e#50#143#0" />
             <element signature="e#152#523#0" />
@@ -633,12 +625,10 @@
             <element signature="e#1938#1964#0" />
             <element signature="e#1988#2062#0" />
             <element signature="e#2089#2120#0" />
-            <element signature="e#2137#4481#0" />
             <element signature="e#2184#2306#0" />
             <element signature="e#2270#2302#0" />
             <element signature="e#2317#2452#0" />
             <element signature="e#2368#2448#0" />
-            <element signature="e#2465#3424#0" />
             <element signature="e#2473#2771#0" />
             <element signature="e#2593#2649#0" />
             <element signature="e#2675#2712#0" />

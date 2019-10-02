@@ -209,6 +209,10 @@ footer {
       }
     }
 
+    a {
+      word-break: keep-all;
+    }
+
     .rmmbrit-gif-wrap {
       padding: 80px 240px;
       background-color: #B8CADB;

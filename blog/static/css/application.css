@@ -708,6 +708,8 @@ footer {
         margin-left: -24px;
         margin-bottom: 8px;
         width: calc(100% + 48px); } }
+  .list-projects .content a {
+    word-break: keep-all; }
   .list-projects .content .rmmbrit-gif-wrap {
     padding: 80px 240px;
     background-color: #B8CADB;
