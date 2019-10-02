@@ -162,9 +162,14 @@ footer {
     }
   }
 
-  .number ::before {
-    content: "0" counter(item-counter) ". ";
-    padding-right: 2px;
+  .number{
+    position: sticky;
+    top: 0;
+
+    &::before {
+      content: "0" counter(item-counter) ". ";
+      padding-right: 2px;
+    }
   }
 
   .content {

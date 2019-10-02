@@ -658,9 +658,12 @@ footer {
     @media (max-width: 991px) {
       .list-projects .project-item {
         padding-top: 80px; } }
-  .list-projects .number ::before {
-    content: "0" counter(item-counter) ". ";
-    padding-right: 2px; }
+  .list-projects .number {
+    position: sticky;
+    top: 0; }
+    .list-projects .number::before {
+      content: "0" counter(item-counter) ". ";
+      padding-right: 2px; }
   .list-projects .content p {
     font-size: 48px;
     line-height: 1.4;
