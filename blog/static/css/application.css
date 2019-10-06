@@ -654,10 +654,12 @@ footer {
   margin: 0; }
   .list-projects .project-item {
     counter-increment: item-counter;
-    padding-top: 160px; }
+    padding-top: 80px;
+    position: sticky;
+    top: 80vh; }
     @media (max-width: 991px) {
       .list-projects .project-item {
-        padding-top: 80px; } }
+        top: 56vh; } }
   .list-projects .number {
     position: sticky;
     top: 0; }
