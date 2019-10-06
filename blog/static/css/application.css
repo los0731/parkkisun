@@ -654,13 +654,15 @@ footer {
   margin: 0; }
   .list-projects .project-item {
     counter-increment: item-counter;
-    padding-top: 30vh; }
-    @media (max-height: 920px) {
-      .list-projects .project-item {
-        padding-top: 160px; } }
+    padding-top: 160px; }
     @media (max-width: 991px) {
       .list-projects .project-item {
         padding-top: 80px; } }
+    .list-projects .project-item#project_programmers {
+      padding-top: 30vh; }
+      @media (max-height: 920px) {
+        .list-projects .project-item#project_programmers {
+          padding-top: 160px; } }
   .list-projects .number {
     position: sticky;
     top: 0; }

@@ -155,14 +155,18 @@ footer {
 
   .project-item {
     counter-increment: item-counter;
-    padding-top: 30vh;
-
-    @media (max-height: 920px) {
-      padding-top: 160px;
-    }
+    padding-top: 160px;
 
     @media ($lg-down) {
       padding-top: 80px;
+    }
+
+    &#project_programmers {
+      padding-top: 30vh;
+
+      @media (max-height: 920px) {
+        padding-top: 160px;
+      }
     }
   }
 
