@@ -654,12 +654,13 @@ footer {
   margin: 0; }
   .list-projects .project-item {
     counter-increment: item-counter;
-    padding-top: 80px;
-    position: sticky;
-    top: 80vh; }
+    padding-top: 30vh; }
+    @media (max-height: 920px) {
+      .list-projects .project-item {
+        padding-top: 160px; } }
     @media (max-width: 991px) {
       .list-projects .project-item {
-        top: 56vh; } }
+        padding-top: 80px; } }
   .list-projects .number {
     position: sticky;
     top: 0; }
