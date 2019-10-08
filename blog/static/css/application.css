@@ -906,6 +906,8 @@ footer {
     @media (min-width: 1600px) {
       .post-detail .markdown .video-frame {
         padding-bottom: 124.4%; } }
+    .post-detail .markdown video {
+      margin: 40px 0; }
     .post-detail .markdown h1, .post-detail .markdown h2, .post-detail .markdown h3, .post-detail .markdown h4, .post-detail .markdown h5 {
       margin-bottom: 16px; }
     .post-detail .markdown h1, .post-detail .markdown h2, .post-detail .markdown h3, .post-detail .markdown h4 {
