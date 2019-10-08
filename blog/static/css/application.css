@@ -908,52 +908,50 @@ footer {
         padding-bottom: 124.4%; } }
     .post-detail .markdown h1, .post-detail .markdown h2, .post-detail .markdown h3, .post-detail .markdown h4, .post-detail .markdown h5 {
       margin-bottom: 16px; }
-    .post-detail .markdown p, .post-detail .markdown ul, .post-detail .markdown ol, .post-detail .markdown pre {
-      margin-bottom: 40px; }
-    .post-detail .markdown h1 {
-      margin-top: 64px; }
-      @media (max-width: 991px) {
-        .post-detail .markdown h1 {
-          font-size: 48px;
-          line-height: 1.4;
-          word-spacing: -2px; } }
-    .post-detail .markdown h2 {
-      margin-top: 48px; }
-      @media (max-width: 991px) {
-        .post-detail .markdown h2 {
-          font-size: 36px;
-          line-height: 1.4;
-          word-spacing: -2px; } }
-    .post-detail .markdown h3 {
-      margin-top: 32px; }
-      @media (max-width: 991px) {
-        .post-detail .markdown h3 {
-          font-size: 24px;
-          line-height: 1.4; } }
-    .post-detail .markdown h4 {
-      margin-top: 24px; }
-      @media (max-width: 991px) {
-        .post-detail .markdown h4 {
-          font-size: 20px;
-          line-height: 1.6; } }
-    .post-detail .markdown h5, .post-detail .markdown li {
+    .post-detail .markdown h1, .post-detail .markdown h2, .post-detail .markdown h3, .post-detail .markdown h4 {
+      margin-top: 80px; }
+      .post-detail .markdown h1:first-child, .post-detail .markdown h2:first-child, .post-detail .markdown h3:first-child, .post-detail .markdown h4:first-child {
+        margin-top: 0; }
+      .post-detail .markdown h1 + h1, .post-detail .markdown h1 + h2, .post-detail .markdown h1 + h3, .post-detail .markdown h1 + h4, .post-detail .markdown h2 + h1, .post-detail .markdown h2 + h2, .post-detail .markdown h2 + h3, .post-detail .markdown h2 + h4, .post-detail .markdown h3 + h1, .post-detail .markdown h3 + h2, .post-detail .markdown h3 + h3, .post-detail .markdown h3 + h4, .post-detail .markdown h4 + h1, .post-detail .markdown h4 + h2, .post-detail .markdown h4 + h3, .post-detail .markdown h4 + h4 {
+        margin-top: 24px; }
+    @media (max-width: 991px) {
+      .post-detail .markdown h1 {
+        font-size: 48px;
+        line-height: 1.4;
+        word-spacing: -2px; } }
+    @media (max-width: 991px) {
+      .post-detail .markdown h2 {
+        font-size: 36px;
+        line-height: 1.4;
+        word-spacing: -2px; } }
+    @media (max-width: 991px) {
+      .post-detail .markdown h3 {
+        font-size: 24px;
+        line-height: 1.4; } }
+    @media (max-width: 991px) {
+      .post-detail .markdown h4 {
+        font-size: 20px;
+        line-height: 1.6; } }
+    .post-detail .markdown h5 {
       font-size: 20px;
       line-height: 1.6;
       line-height: 1.4; }
       @media (max-width: 991px) {
-        .post-detail .markdown h5, .post-detail .markdown li {
+        .post-detail .markdown h5 {
           font-size: 16px;
           line-height: 1.8; } }
     @media (max-width: 991px) {
       .post-detail .markdown h6 {
         font-size: 13px;
         line-height: 1.8; } }
-    .post-detail .markdown p {
+    .post-detail .markdown p, .post-detail .markdown ul, .post-detail .markdown ol, .post-detail .markdown pre {
+      margin-bottom: 40px; }
+    .post-detail .markdown p, .post-detail .markdown li {
       font-size: 20px;
       line-height: 1.9;
       word-spacing: -1px; }
       @media (max-width: 991px) {
-        .post-detail .markdown p {
+        .post-detail .markdown p, .post-detail .markdown li {
           font-size: 16px;
           line-height: 1.8; } }
     .post-detail .markdown ul ul, .post-detail .markdown ul ol, .post-detail .markdown ul li + li, .post-detail .markdown ol ul, .post-detail .markdown ol ol, .post-detail .markdown ol li + li {

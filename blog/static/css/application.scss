@@ -444,43 +444,47 @@ footer {
       margin-bottom: 16px;
     }
 
-    p, ul, ol, pre {
-      margin-bottom: 40px;
+    h1, h2, h3, h4 {
+      margin-top: 80px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      & + h1,
+      & + h2,
+      & + h3,
+      & + h4 {
+        margin-top: 24px;
+      }
+
     }
 
     h1 {
-      margin-top: 64px;
-
       @media ($lg-down) {
         @include h2;
       }
     }
 
     h2 {
-      margin-top: 48px;
-
       @media ($lg-down) {
         @include h3;
       }
     }
 
     h3 {
-      margin-top: 32px;
-
       @media ($lg-down) {
         @include h4;
       }
     }
 
     h4 {
-      margin-top: 24px;
-
       @media ($lg-down) {
         @include h5;
       }
     }
 
-    h5, li {
+    h5 {
       @include h5;
       line-height: 1.4;
 
@@ -495,7 +499,11 @@ footer {
       }
     }
 
-    p {
+    p, ul, ol, pre {
+      margin-bottom: 40px;
+    }
+
+    p, li {
       @include paragraph;
 
       @media ($lg-down) {
