@@ -579,46 +579,6 @@ footer {
       font-size: 16px;
       line-height: 1.8; } }
 
-.recent-posts,
-.about--hero,
-.posts,
-.post-detail {
-  animation: fadeIn 1s ease-in-out 0.4s backwards; }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-8px);
-    -moz-transform: translateY(-8px);
-    -ms-transform: translateY(-8px);
-    -o-transform: translateY(-8px);
-    transform: translateY(-8px); }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0); } }
-footer,
-.list-projects,
-.about--items,
-.hyperlink-resume {
-  animation: fadeIn 1s ease-in-out 0.8s backwards; }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-8px);
-    -moz-transform: translateY(-8px);
-    -ms-transform: translateY(-8px);
-    -o-transform: translateY(-8px);
-    transform: translateY(-8px); }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0); } }
 .recent-posts {
   padding-top: 64px; }
   .recent-posts .posts {
@@ -1059,7 +1019,7 @@ footer,
       .about--hero a {
         box-shadow: 0 calc(3px - 1px) #0078FF; } }
   @media (max-width: 1599px) {
-    .about--hero br {
+    .about--hero br.xxl-down {
       display: none; } }
 
 .about--items {
