@@ -149,7 +149,7 @@
   }
 }
 
-@mixin fadeIn($delay: .8s) {
+@mixin fadeIn($delay: .4s) {
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -169,5 +169,5 @@
     }
   }
 
-  animation: fadeIn 1s ease-in-out $delay 1 backwards;
+  animation: fadeIn 1s ease-in-out $delay backwards;
 }
