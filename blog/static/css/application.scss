@@ -103,7 +103,7 @@ footer,
 .list-projects,
 .about--items,
 .hyperlink-resume {
-  @include fadeIn(.12s);
+  @include fadeIn(1.2s);
 }
 
 .recent-posts {
