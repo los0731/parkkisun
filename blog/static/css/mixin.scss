@@ -149,7 +149,7 @@
   }
 }
 
-@mixin fadeIn($delay: .4s) {
+@mixin fadeIn($delay: .6s) {
   @keyframes fadeIn {
     from {
       opacity: 0;

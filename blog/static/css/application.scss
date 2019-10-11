@@ -92,6 +92,20 @@ footer {
   }
 }
 
+.recent-posts,
+.about--hero,
+.posts,
+.post-detail {
+  @include fadeIn();
+}
+
+footer,
+.list-projects,
+.about--items,
+.hyperlink-resume {
+  @include fadeIn(.12s);
+}
+
 .recent-posts {
   @include margin-top--common;
 
