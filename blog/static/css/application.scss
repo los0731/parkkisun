@@ -9,6 +9,7 @@ body {
 }
 
 footer {
+  @include fadeIn(2.4s);
   padding: 16px 0;
   margin-top: 120px;
 
@@ -92,8 +93,17 @@ footer {
   }
 }
 
-.introduce {
-  @include h2;
+.recent-posts,
+.about--hero,
+.posts,
+.post-detail {
+  @include fadeIn();
+}
+
+.list-recent-posts,
+.about--items,
+.hyperlink-resume {
+  @include fadeIn(1.6s);
 }
 
 .recent-posts {
@@ -151,6 +161,7 @@ footer {
 }
 
 .list-projects {
+  @include fadeIn(1.6s);
   @include list-style-none;
 
   .project-item {

@@ -517,8 +517,24 @@ body {
   margin: 0; }
 
 footer {
+  animation: fadeIn 1s ease-in-out 2.4s 1 backwards;
   padding: 16px 0;
   margin-top: 120px; }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
   footer a, footer h6 {
     font-size: 16px;
     line-height: 1.8;
@@ -579,11 +595,45 @@ footer {
       font-size: 16px;
       line-height: 1.8; } }
 
-.introduce {
-  font-size: 48px;
-  line-height: 1.4;
-  word-spacing: -2px; }
-
+.recent-posts,
+.about--hero,
+.posts,
+.post-detail {
+  animation: fadeIn 1s ease-in-out 0.8s 1 backwards; }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+.list-recent-posts,
+.about--items,
+.hyperlink-resume {
+  animation: fadeIn 1s ease-in-out 1.6s 1 backwards; }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
 .recent-posts {
   padding-top: 64px; }
   .recent-posts .posts {
@@ -649,9 +699,25 @@ footer {
   margin: 0; }
 
 .list-projects {
+  animation: fadeIn 1s ease-in-out 1.6s 1 backwards;
   list-style: none;
   padding: 0;
   margin: 0; }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
   .list-projects .project-item {
     counter-increment: item-counter;
     padding-top: 160px; }
