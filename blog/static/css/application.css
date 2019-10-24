@@ -1176,6 +1176,7 @@ footer,
   .container-work-details section .col-cover {
     min-height: 100vh;
     position: relative;
+    z-index: 2;
     background-color: #233552;
     color: white;
     padding-top: 40px; }
@@ -1234,8 +1235,8 @@ footer,
   .container-work-details section .col-visuals {
     display: inline-block;
     vertical-align: top;
-    padding-top: 40px;
-    padding-bottom: 40px; }
+    padding-top: 64px;
+    padding-bottom: 64px; }
     @media (max-width: 991px) {
       .container-work-details section .col-description,
       .container-work-details section .col-visuals {
@@ -1274,6 +1275,30 @@ footer,
     box-shadow: inset 0 0 #FA6B6B; }
   to {
     box-shadow: inset 0 -4px #FA6B6B; } }
+.container-work-details .nav-index {
+  list-style: none;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #233552; }
+  @media (max-width: 991px) {
+    .container-work-details .nav-index {
+      display: none; } }
+  .container-work-details .nav-index .index-item {
+    font-size: 13px;
+    line-height: 1.8; }
+    .container-work-details .nav-index .index-item a {
+      color: #B6C1DB;
+      opacity: .6; }
+    .container-work-details .nav-index .index-item:hover a {
+      opacity: 1;
+      color: white; }
+    .container-work-details .nav-index .index-item + .index-item {
+      margin-left: 16px; }
 .container-work-details .project-metas {
   list-style: none;
   padding: 0;
@@ -1299,5 +1324,7 @@ footer,
   line-height: 1.6; }
 .container-work-details .markdown h5 {
   font-weight: 700; }
+.container-work-details .markdown img + img {
+  margin-top: -32px; }
 
 /*# sourceMappingURL=application.css.map */

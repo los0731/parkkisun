@@ -712,6 +712,7 @@ footer,
     .col-cover {
       min-height: 100vh;
       position: relative;
+      z-index: 2;
       background-color: $blue-grey-900;
       color: white;
       padding-top: 40px;
@@ -752,8 +753,8 @@ footer,
     .col-visuals {
       display: inline-block;
       vertical-align: top;
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding-top: 64px;
+      padding-bottom: 64px;
 
       @media ($lg-down) {
         padding-top: 24px;
@@ -815,6 +816,42 @@ footer,
     }
   }
 
+  .nav-index {
+    list-style: none;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: $blue-grey-900;
+
+    @media ($lg-down) {
+      display: none;
+    }
+
+
+    .index-item {
+      @include h7;
+
+      a {
+
+        color: $blue-grey-200;
+        opacity: .6;
+      }
+
+      &:hover a {
+        opacity: 1;
+        color: white;
+      }
+
+      & + .index-item {
+        margin-left: 16px;
+      }
+    }
+  }
+
   .nav-application {
     .nav-item {
       //color: white;
@@ -858,6 +895,10 @@ footer,
 
     h5 {
       font-weight: 700;
+    }
+
+    img + img {
+      margin-top: -32px;
     }
   }
 }
