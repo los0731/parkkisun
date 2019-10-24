@@ -13,67 +13,275 @@
 </head>
 <body>
 <div class="container-work-details">
-  <section class="detail-item">
-    <div class="col-cover"
-         style="background: url(https://images.unsplash.com/photo-1458724204880-8a3555bb5003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2200&q=80) no-repeat center; background-size: cover">
-
-      <nav class="nav-application">
-        <a class="nav-item nav-home" href="/">박기선</a>
-        <a class="nav-item nav-menu" href="{% url 'about' %}">소개</a>
-        <a class="nav-item nav-menu" href="{% url 'post_list' %}">글타래</a>
-
-        {% if user.is_authenticated %}
-        <a class="nav-item nav-menu btn-post-new" href="{% url 'post_new' %}">씀</a>
-        {% endif %}
-      </nav>
-
-      <h1 class="cover-headline">Cover</h1>
-
+  <section>
+    <div class="col-cover">
+      <div class="animated-fade-in">
+        <h2 class="title">
+          <span class="underline-red">Park Kisun<br>Project Detail</span>
+        </h2>
+        <ol class="list-index">
+          <li>Programmers</li>
+          <li>FS Search</li>
+          <li>Hands-On Projects for HTML & CSS</li>
+          <li>Hashcode</li>
+          <li>Design Process</li>
+        </ol>
+        <h3 class="arrow-down">↓</h3>
+      </div>
     </div>
   </section>
 
-  <section class="detail-item">
+  <!--programmers-->
+  <section>
+    <div class="col-header">
+      <h3 class="header-title">Programmers</h3>
+    </div>
+  </section>
+  <section class="markdown">
     <div class="col-description">
-      <h3 class="sub-headline">Project Title</h3>
-      <table class="table">
-        <tbody>
-        <tr>
-          <th>구분</th>
-          <td>내용</td>
-        </tr>
-        <tr>
-          <th>구분</th>
-          <td>내용</td>
-        </tr>
-        <tr>
-          <th>구분</th>
-          <td>내용</td>
-        </tr>
-        </tbody>
-      </table>
+      <p>
+        프로그래머스는 '더 기술적인 채용 프로세스'를 목표로 개발자들의 역량을 시각화하고,
+        기술적인 평가를 통해 효율적으로 채용할 수 있는 채용/평가 서비스입니다.
+        저는 비즈니스 방향을 제품의 기술적인 특징을 이해하고 그에 맞는 기능 설계와, End-user 시점의 UI를 담당했습니다.
+        Bootstrap v4.3.1 버전을 수정하여 사용 중입니다.
+      </p>
 
-      <p>Celebrating London as the design capital of the world, the London Design Festival takes place every September. Over nine days, hundreds of exhibitions and installations, alongside a wide-ranging programme of events, take place in the ten different design districts across the city.</p>
+      <ul class="project-metas">
+        <li>
+          <h6>역할</h6>
+          <p>
+            UI, GUI, Brand
+          </p>
+          <br>
+          <h6>기간</h6>
+          <p>
+            16년 6월 ~ 현재
+          </p>
+        </li>
 
-      <p>Pentagram has designed the London Design Festival identity for the thirteenth consecutive year, creating posters, signage, merchandise and advertising as well as the extensive 240-page printed festival guide. Working closely with Festival Director Ben Evans and Chairman Sir John Sorrell, the team’s aim was to develop a campaign that would be instantly recognisable, cutting through the visual chaos that exists in London's crowded visual landscape.</p>
+        <li>
+          <h6>도구</h6>
+          <p>
+            HTML, SCSS<br>
+            Bootstrap<br>
+            Sketch<br>
+            Invision<br>
+            Adobe creatives
+            <br>
+            <sub>Low level</sub><br>
+            JavaScript(jQuery)<br>
+            Google Chart<br>
+          </p>
+        </li>
+      </ul>
     </div>
     <div class="col-visuals">
-      <h1>col-visuals</h1>
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571890111/parkkisun/prgms-1.png" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571890111/parkkisun/prgms-3.png" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571890111/parkkisun/prgms-2.jpg" alt="">
     </div>
   </section>
 
-  <section class="detail-item">
+  <section class="markdown">
     <div class="col-description">
-      <p>Celebrating London as the design capital of the world, the London Design Festival takes place every September. Over nine days, hundreds of exhibitions and installations, alongside a wide-ranging programme of events, take place in the ten different design districts across the city.</p>
+      <h5>디자인 시스템</h5>
+      <p>
+        프로그래머스는 온라인 코드 실행기 환경을 구현하는 것으로 프로젝트가 시작되었습니다.
+        그 후, <code>온라인 학습코스 -> 코딩 테스트 -> ATS(채용/지원자 관리)</code> 순으로
+        빠르게 확장/통합되었기 때문에 여러 가지 목적을 가진 기능들을 하나의 서비스로 녹여내는 과정이 있었습니다.
+        그 과정에서 반복적으로 직면하는 문제는 시간 부족과 일괄된 UI 였습니다.
+      </p>
+      <p>
+        서비스가 확장하는 과정에서 생기는 문제들을 해결하기 위하여
+        디자인너와 개발자들이 가장 많이 접하는 로고, 서체, 색상, UI 요소들를 정리하여 접근하기 쉽도록 했습니다.
+        서체, 색상은 필요한 기준으로 구분하여 Scss 변수로 정리하고, UI 요소는 HTML과 Css 클래스로 구성하여 개발자/디자이너들이 바로 사용할 수 있도록 했습니다.
+        프로그래머스는 웹 서비스였기 때문에 Bootstrap을 변형했습니다.
+      </p>
 
-      <p>Pentagram has designed the London Design Festival identity for the thirteenth consecutive year, creating posters, signage, merchandise and advertising as well as the extensive 240-page printed festival guide. Working closely with Festival Director Ben Evans and Chairman Sir John Sorrell, the team’s aim was to develop a campaign that would be instantly recognisable, cutting through the visual chaos that exists in London's crowded visual landscape.</p>
+
+      <p>디자인 가이드라인을 통하여 얻은 것은 다음과 같습니다.</p>
+      <ul>
+        <li>개발자-디자이너의 설명의 양이 줄었습니다.</li>
+        <li>디자이너 없이 개발자가 직접 디자인하는 경우가 늘었습니다.</li>
+        <li>똑같은 UI 요소를 2번 디자인/개발하는 경우가 줄었습니다.</li>
+        <li>마케팅/홍보 담당자가 공식 BI를 사용했습니다.</li>
+        <li>디자이너의 여유가 약간 늘었습니다.</li>
+        <li>디자이너의 업무가 뷰를 표현하는것에서 사용성을 향상시키는 것으로 조금 더 변했습니다.</li>
+      </ul>
     </div>
     <div class="col-visuals">
-      <h1>col-visuals</h1>
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571890842/parkkisun/dg-0.jpg" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571890853/parkkisun/dg-1.png" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571890847/parkkisun/dg-2.png" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571890842/parkkisun/dg-3.png" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571890840/parkkisun/dg-4.png" alt="">
+    </div>
+  </section>
+  <section class="markdown">
+    <div class="col-description">
+      <h5>개발자 코딩 테스트 UI</h5>
+      <p>
+        온라인상에서 진행하는 코딩 테스트 환경을 디자인했습니다.
+        지원자들이 온라인 상에서 코드를 작성하는 불편함은 최소화하고,
+        문제를 이해하는 것 이외의 고민이 없도록 레이아웃을 조정하고,
+        Atom, VS Code를 이용하는 수준의 코드 가독성을 유지하려고 노력했습니다.
+      </p>
+
+      <p>
+        Mono 타입 서체는 Hack을 선택했으며,
+        배경을 밝음/어두움으로 조정할 수 있으면 각 배경에 맞는 코드/마크다운의 Color theme를 구성했습니다.
+      </p>
+    </div>
+    <div class="col-visuals">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571891448/parkkisun/te-1.jpg" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571891448/parkkisun/te-2.png" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571891448/parkkisun/te-3.png" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571891448/parkkisun/te-4.png" alt="">
+
+    </div>
+  </section>
+
+  <section class="markdown">
+    <div class="col-description">
+      <h5>온라인 이력서 UI</h5>
+      <p>
+        온라인상에서 자신의 경험과 프로젝트를 보여줄 수 있는 폼과 뷰를 디자인 했습니다.
+        계정 생성과 같이 일반적인 폼 보다는 등록해야하는 정보가 많았기 때문에,
+        진행 흐름과 저장 방식을 불편하지 않게 하려고 노력했습니다.
+        Wizard UI를 적용하여 사용자가 폼 입력을 단계별로 진행할 수 있도록 했습니다.
+      </p>
+    </div>
+    <div class="col-visuals">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571892535/parkkisun/re-1.jpg" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571892535/parkkisun/re-2.png" alt="">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571892535/parkkisun/re-3.png" alt="">
+    </div>
+  </section>
+
+  <section class="markdown">
+    <div class="col-description">
+      <p>
+        <b>개발자 채용</b><br>
+        프로그래머스는 개발자가 자신의 프로필을 등록하면 기업들에게 면접 제안을 받을 수 있습니다. 따라서 개발자들이 자신의 정보를 입력하기 위한 폼을 디자인했습니다. Wizard UI를 적용하여 사용자가 폼 입력을 단계별로 진행할 수 있도록 했습니다.
+      </p>
+    </div>
+    <div class="col-visuals">
+    </div>
+  </section>
+
+  <!--design process-->
+  <section>
+    <div class="col-header">
+      <h3 class="header-title">Design Process</h3>
+    </div>
+  </section>
+  <section class="markdown">
+    <div class="col-description">
+      <p>
+        지금까지 대부분의 프로젝트에 참여할 때, 7단계의 프로세스를 통해 팀에 기여했습니다.
+        사용자/내부 테스트 이전에 각 디자인의 각 단계를 진행하면서 1,2번의 의도에 맞는지 지속적으로 체크하고
+        짧은 시간에 프로세스를 가능한 많이 반복하려고 노력했습니다.
+      </p>
+      <ol>
+        <li>
+          <b>Definition</b> <br>
+        </li>
+        <li>
+          <b>Flowchart</b><br>
+        </li>
+        <li>
+          <b>Wireframe</b><br>
+        </li>
+        <li>
+          <b>Design System</b><br>
+        </li>
+        <li>
+          <b>GUI</b><br>
+        </li>
+        <li>
+          <b>Prototype</b><br>
+        </li>
+        <li>
+          <b>Commit & QA</b> <br>
+        </li>
+      </ol>
+    </div>
+    <div class="col-visuals">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571792863/parkkisun/img-process.png" alt="첨부 이미지">
+
+    </div>
+  </section>
+  <section class="markdown">
+    <div class="col-description">
+      <p>
+        <b>1. Definition</b> <br>
+        문제/요구를 직접 찾기도 하지만, 다른 팀과 협업하면서 수용하는 경우가 많았습니다.
+        가능하다면 문제를 요청하는 상황을 충분히 이해하고 그 컨텍스트에 맞게 문제를 재정의하려고 노력합니다.
+        정의된 문제에 맞는 해결책의 방향이나 가설도 같이 찾습니다.
+      </p>
+      <p>
+        <b>2. Flowchart</b><br>
+        정의된 문제와 해결 방향을 빠르게 사용자의 흐름으로 표시합니다.
+        디테일한 요소들은 없지만, 페이지 단위의 흐름대로 사용자가 움직였을 때 문제가 해결되는지 확인합니다.
+        프로젝트가 큰 경우, 다른 기능들과 충돌하지는 않는지 확인하려고 노력합니다.
+      </p>
+      <p>
+        <b>3. Wireframe</b><br>
+        조금 더 구체적인 UI를 표현합니다. 빠르게 종이에 뼈대를 그리고, Sketch에 옮기는 식으로 반복합니다.
+        이때 모든 디테일한 요소들이 빠지지 않도록 하고, 가능하다면 UI 문구도 정확하게 입력하려 노력합니다.
+      </p>
+    </div>
+    <div class="col-visuals">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571790590/parkkisun/img-define.jpg" alt="첨부 이미지">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571790689/parkkisun/img-flowchart.png" alt="첨부 이미지">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571792446/parkkisun/fireframe.png" alt="첨부 이미지">
+    </div>
+  </section>
+  <section class="markdown">
+    <div class="col-description">
+      <p>
+        <b>4. Design System</b><br>
+        위에도 언급했지만, 작게는 공통 서체, 색상 등의 테마의 규칙을 정하거나, UI 요소 라이브러리, 사용성 가이드라인과 같이
+        협업 시 적용 가능한 시스템을 구축합니다.
+      </p>
+      <p>
+        <b>5. GUI</b><br>
+        가급적 OS의 기본 사용성을 중요하게 생각합니다.
+        여러 서비스를 동시에 사용하는 사용자들이 작동법을 새로 배우지 않고 제품을 이용할 수 있도록 노력합니다.
+        물론, 필요한 경우에는 완전히 새로 디자인합니다.
+      </p>
+    </div>
+    <div class="col-visuals">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571793253/parkkisun/system.png" alt="첨부 이미지">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571791775/parkkisun/gui.png" alt="첨부 이미지">
+    </div>
+  </section>
+  <section class="markdown">
+    <div class="col-description">
+      <p>
+        <b>6. Prototype</b><br>
+        웹의 경우에는 직접 마크업을 하고 있습니다. 모바일의 경우에는 protopie를 주로 활용하여 목업을 제작하여 개발자들과 협업합니다.
+        가급적 개발자가 구현할 때 다시 개발하지 않도록 노력합니다.
+      </p>
+      <p>
+        <b>7. Commit & QA</b> <br>
+        현재는 웹 서비스를 운영 중이기 때문에, 디자인 버그는 직접 수정하여 Github를 통해 커밋하고 있습니다. 직접 커밋하지 않더라도,
+        제품이 의도한 디자인대로 반영되었는지 QA 합니다. 문제가 있으면 프로세스를 다시 반복합니다.
+      </p>
+    </div>
+    <div class="col-visuals">
+      <img src="https://res.cloudinary.com/dyiqg9qhi/image/upload/v1571802012/parkkisun/img-mock.png" alt="첨부 이미지">
+    </div>
+  </section>
+  <section class="markdown">
+    <div class="col-description">
+    </div>
+    <div class="col-visuals">
     </div>
   </section>
 
 
-  
+
 
   <footer>
     <a href="/">
