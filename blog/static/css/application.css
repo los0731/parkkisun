@@ -1172,21 +1172,21 @@ footer,
     .container-work-details .col-visuals {
       padding-left: 16px;
       padding-right: 16px; } }
-.container-work-details section {
+.container-work-details .section-item {
   font-size: 0;
   position: relative; }
-  .container-work-details section .col-cover {
+  .container-work-details .section-item .col-cover {
     min-height: 100vh;
     position: relative;
     z-index: 2;
     background-color: #233552;
     color: white;
     padding-top: 40px; }
-    .container-work-details section .col-cover .title {
+    .container-work-details .section-item .col-cover .title {
       line-height: 1.4; }
-    .container-work-details section .col-cover .sub-title {
+    .container-work-details .section-item .col-cover .sub-title {
       margin-top: 24px; }
-    .container-work-details section .col-cover .list-index {
+    .container-work-details .section-item .col-cover .list-index {
       animation: fadeIn 1s ease-in-out 3s backwards;
       margin-top: 40px;
       padding-left: 24px; }
@@ -1205,9 +1205,9 @@ footer,
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0); } }
-      .container-work-details section .col-cover .list-index li {
+      .container-work-details .section-item .col-cover .list-index li {
         margin-bottom: 8px; }
-    .container-work-details section .col-cover .arrow-down {
+    .container-work-details .section-item .col-cover .arrow-down {
       animation: fadeIn 1s ease-in-out 3s backwards;
       position: absolute;
       bottom: 40px;
@@ -1234,52 +1234,55 @@ footer,
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0); } }
-      .container-work-details section .col-cover .arrow-down a {
+      .container-work-details .section-item .col-cover .arrow-down a {
         display: block;
         transition: .6s;
         display: block;
         color: white;
         box-shadow: inset 0 0 #FA6B6B; }
-        .container-work-details section .col-cover .arrow-down a:hover {
+        .container-work-details .section-item .col-cover .arrow-down a:hover {
           box-shadow: inset 0 80px #FA6B6B; }
-  .container-work-details section .col-description,
-  .container-work-details section .col-visuals {
+  .container-work-details .section-item .col-description,
+  .container-work-details .section-item .col-visuals {
     display: inline-block;
     vertical-align: top;
     padding-top: 64px;
     padding-bottom: 64px; }
     @media (max-width: 991px) {
-      .container-work-details section .col-description,
-      .container-work-details section .col-visuals {
+      .container-work-details .section-item .col-description,
+      .container-work-details .section-item .col-visuals {
         padding-top: 24px;
         padding-bottom: 24px; } }
   @media (min-width: 1200px) {
-    .container-work-details section .col-description {
+    .container-work-details .section-item .col-description {
       position: sticky;
       top: 0;
       width: 560px;
       padding-right: 40px; } }
   @media (max-width: 1599px) {
-    .container-work-details section .col-description {
+    .container-work-details .section-item .col-description {
       width: 440px; } }
   @media (max-width: 1199px) {
-    .container-work-details section .col-description {
+    .container-work-details .section-item .col-description {
       width: 100%; } }
   @media (min-width: 1200px) {
-    .container-work-details section .col-visuals {
+    .container-work-details .section-item .col-visuals {
       width: calc(100% - 560px); } }
   @media (max-width: 1599px) {
-    .container-work-details section .col-visuals {
+    .container-work-details .section-item .col-visuals {
       width: calc(100% - 440px); } }
   @media (max-width: 1199px) {
-    .container-work-details section .col-visuals {
+    .container-work-details .section-item .col-visuals {
       width: 100%; } }
-  .container-work-details section .header-title {
+  .container-work-details .section-item .header-title {
     padding: 120px 0 40px 0;
     border-bottom: 1px solid #D9E4F1; }
-  .container-work-details section .description-title {
+    @media (max-width: 991px) {
+      .container-work-details .section-item .header-title {
+        padding: 64px 0 32px 0; } }
+  .container-work-details .section-item .description-title {
     margin-bottom: 24px; }
-  .container-work-details section .underline-red {
+  .container-work-details .section-item .underline-red {
     animation: bottomUp 1s ease-in-out 2s forwards; }
 @keyframes bottomUp {
   from {
@@ -1287,15 +1290,16 @@ footer,
   to {
     box-shadow: inset 0 -4px #FA6B6B; } }
 .container-work-details .nav-index {
-  list-style: none;
   position: fixed;
   z-index: 1;
-  display: flex;
-  justify-content: center;
   top: 0;
-  left: 0;
-  width: 100vw;
-  background-color: #233552; }
+  left: 0; }
+  .container-work-details .nav-index ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: #233552; }
   @media (max-width: 991px) {
     .container-work-details .nav-index {
       display: none; } }
@@ -1310,11 +1314,17 @@ footer,
       color: white; }
     .container-work-details .nav-index .index-item + .index-item {
       margin-left: 24px; }
+    .container-work-details .nav-index .index-item.active {
+      box-shadow: inset 0 -3px #FA6B6B; }
+      .container-work-details .nav-index .index-item.active a {
+        opacity: 1;
+        color: white; }
 .container-work-details .project-metas {
   list-style: none;
   padding: 0;
   font-size: 0;
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 0 !important; }
   .container-work-details .project-metas li {
     font-size: 16px;
     display: inline-block;
@@ -1343,6 +1353,10 @@ footer,
   .container-work-details .markdown .video-frame:first-child,
   .container-work-details .markdown img:first-child {
     margin-top: 0; }
+  .container-work-details .markdown video:last-child,
+  .container-work-details .markdown .video-frame:last-child,
+  .container-work-details .markdown img:last-child {
+    margin-bottom: 0; }
   .container-work-details .markdown video + img, .container-work-details .markdown video + video, .container-work-details .markdown video + .video-frame,
   .container-work-details .markdown .video-frame + img,
   .container-work-details .markdown .video-frame + video,
