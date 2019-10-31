@@ -2,7 +2,6 @@
 @import "bootstrab-theme";
 
 body {
-  background-color: $color-background;
   word-break: keep-all;
   padding: 0;
   margin: 0;
@@ -246,7 +245,7 @@ footer {
 footer,
 .list-projects,
 .about--items,
-.hyperlink-resume {
+.hyperlink-item {
   @include fadeIn(1.2s);
 }
 
@@ -659,8 +658,9 @@ footer,
   }
 }
 
-.hyperlink-resume {
+.hyperlink-item {
   @include margin-top--common;
+  display: inline-block;
 
   @media ($lg-down) {
     @include h6;
@@ -668,6 +668,7 @@ footer,
 
   a {
     @include linkable-inline();
+    margin-right: 24px;
   }
 }
 

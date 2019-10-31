@@ -511,7 +511,6 @@ blockquote {
       padding-right: 40px; } }
 
 body {
-  background-color: #FEFDFC;
   word-break: keep-all;
   padding: 0;
   margin: 0; }
@@ -698,7 +697,7 @@ footer {
 footer,
 .list-projects,
 .about--items,
-.hyperlink-resume {
+.hyperlink-item {
   animation: fadeIn 1s ease-in-out 1.2s backwards; }
 @keyframes fadeIn {
   from {
@@ -1106,13 +1105,14 @@ footer,
           color: #B6C1DB;
           font-weight: 400; } }
 
-.hyperlink-resume {
-  padding-top: 64px; }
+.hyperlink-item {
+  padding-top: 64px;
+  display: inline-block; }
   @media (max-width: 991px) {
-    .hyperlink-resume {
+    .hyperlink-item {
       font-size: 16px;
       line-height: 1.8; } }
-  .hyperlink-resume a {
+  .hyperlink-item a {
     transition-duration: 0.16s;
     transition-property: all;
     transition-timing-function: ease-in-out;
@@ -1120,12 +1120,13 @@ footer,
     position: relative;
     display: inline;
     color: #364866;
-    box-shadow: 0 3px #0078FF; }
-    .hyperlink-resume a:hover {
+    box-shadow: 0 3px #0078FF;
+    margin-right: 24px; }
+    .hyperlink-item a:hover {
       color: #0078FF;
       box-shadow: 0 0 #0078FF; }
     @media (max-width: 991px) {
-      .hyperlink-resume a {
+      .hyperlink-item a {
         box-shadow: 0 calc(3px - 1px) #0078FF; } }
 
 .video-frame {
