@@ -683,11 +683,6 @@ footer,
   }
 }
 
-
-
-//for toss
-
-
 .animated-fade-in {
   @include fadeIn();
 }
@@ -720,9 +715,6 @@ footer,
       background-color: $blue-grey-900;
       color: white;
       padding-top: 40px;
-
-      @media ($lg-down) {
-      }
 
       .title {
         line-height: 1.4;
@@ -794,7 +786,7 @@ footer,
     .col-description {
       @media ($xl-up) {
         position: sticky;
-        top: 0;
+        top: 64px;
         width: 560px;
         padding-right: 40px;
       }
@@ -825,6 +817,7 @@ footer,
     .header-title {
       padding: 120px 0 40px 0;
       border-bottom: 1px solid $color-border;
+      margin-bottom: 64px;
 
       @media ($lg-down) {
         padding: 64px 0 16px 0;
@@ -849,6 +842,14 @@ footer,
           box-shadow: inset 0 -4px $point-red;
         }
       }
+    }
+  }
+
+  .markdown {
+    .col-description,
+    .col-visuals {
+      padding-top: 0;
+      padding-bottom: 8px;
     }
   }
 
@@ -984,5 +985,11 @@ footer,
       }
     }
   }
+
+  #footer {
+    margin-top: 64px;
+  }
 }
+
+
 
