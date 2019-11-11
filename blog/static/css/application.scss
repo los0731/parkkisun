@@ -84,7 +84,7 @@ footer {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   color: $color-text--secondary;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
 
   @media ($lg-down) {
     @include h6;
@@ -601,7 +601,7 @@ footer,
   p {
     @include h2;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.8;
 
     @media ($lg-down) {
       @include h5;
