@@ -793,12 +793,9 @@ footer,
       @media (max-height: 920px) {
         .list-projects .project-item#project_programmers {
           padding-top: 160px; } }
-  .list-projects .number {
-    position: sticky;
-    top: 0; }
-    .list-projects .number::before {
-      content: "0" counter(item-counter) ". ";
-      padding-right: 2px; }
+  .list-projects .number::before {
+    content: "0" counter(item-counter) ". ";
+    padding-right: 2px; }
   .list-projects .content p {
     font-size: 48px;
     line-height: 1.4;

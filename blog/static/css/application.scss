@@ -324,8 +324,8 @@ footer,
   }
 
   .number{
-    position: sticky;
-    top: 0;
+    //position: sticky;
+    //top: 0;
 
     &::before {
       content: "0" counter(item-counter) ". ";

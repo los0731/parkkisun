@@ -52,8 +52,8 @@ def post_edit(request, pk):
 def works(request):
     return render(request, 'blog/works.html')
 
-def for_toss(request):
-    return render(request, 'blog/for_toss.html')
+def works_detail(request):
+    return render(request, 'blog/works_detail.html')
 
 def fs_search(request):
     return render(request, 'blog/works/fs-search.html')
