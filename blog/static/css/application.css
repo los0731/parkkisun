@@ -857,7 +857,7 @@ footer,
         padding-top: 80px; } }
     .list-projects .project-item#project_programmers {
       padding-top: 30vh; }
-      @media (max-height: 920px) {
+      @media (max-width: 991px) {
         .list-projects .project-item#project_programmers {
           padding-top: 160px; } }
   .list-projects .number::before {

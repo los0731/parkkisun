@@ -356,7 +356,7 @@ footer,
     &#project_programmers {
       padding-top: 30vh;
 
-      @media (max-height: 920px) {
+      @media ($lg-down) {
         padding-top: 160px;
       }
     }
