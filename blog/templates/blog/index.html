@@ -1,14 +1,9 @@
-{% extends 'blog/base.html' %}
-
-{% block content %}
-{% load static %}
+{% extends 'blog/base.html' %} {% block content %} {% load static %}
 
 <div class="about--hero">
-  <p>안녕하세요. 제품 디자이너 박기선입니다.</p>
   <p>
-    일관되고 재사용 가능한 디자인 경험을 코드로 구현하기 위해 노력 중입니다.
-    웹 타이포그래피와 사용성 높은 인터페이스를 중요하게 생각합니다.
-    카카오톡, 프로그래머스 등 앱과 웹의 론칭-성장-운영의 경험이 있으며, 모르는 것은 주변에 많이 물어보고 빠르게 학습합니다.
+    반갑습니다. 박기선입니다. <br />
+    일관되고 재사용 가능한 디자인 경험을 코드로 구현하기 위해 노력 중입니다. 카카오톡, 프로그래머스 등 앱과 웹의 론칭-성장-운영을 경험 했으며, 웹 타이포그래피와 사용성 높은 인터페이스를 중요하게 생각합니다.
   </p>
 </div>
 
@@ -18,29 +13,27 @@
 
     <div class="content">
       <p class="description">
-        개발자 커리어를 위한 역량 평가 & 개발자 채용 서비스, Programmers를 디자인했습니다.
-        모든 디자인 요소들을 일관된 시스템으로 구축했고, 모든 페이지의 UI는 HTML/SCSS를 사용하여 디자인했습니다.
+        개발자 커리어를 위한 역량 평가 & 개발자 채용 서비스, Programmers를 디자인했습니다. 모든 디자인 요소들을 일관된 시스템으로 구축했고, 모든 페이지의 UI는 HTML/SCSS를 사용하여 디자인했습니다.
       </p>
 
-      <img src="{% static 'imgs/img-prgms-1.png' %}" alt="프로그래머스 첫번째 이미지">
-      <img src="{% static 'imgs/img-prgms-3.png' %}" alt="프로그래머스 두번째 이미지">
-      <img src="{% static 'imgs/img-prgms-2.png' %}" alt="프로그래머스 세번째 이미지">
-      <img src="{% static 'imgs/img-prgms-4.png' %}" alt="프로그래머스 세번째 이미지">
+      <img src="{% static 'imgs/img-prgms-1.png' %}" alt="프로그래머스 첫번째 이미지" />
+      <img src="{% static 'imgs/img-prgms-3.png' %}" alt="프로그래머스 두번째 이미지" />
+      <img src="{% static 'imgs/img-prgms-2.png' %}" alt="프로그래머스 세번째 이미지" />
+      <img src="{% static 'imgs/img-prgms-4.png' %}" alt="프로그래머스 세번째 이미지" />
     </div>
 
     <ul class="list-links">
       <li class="list-link-item">
         <a href="https://programmers.co.kr/" target="_blank">
-          <img class="thumb" src="{% static 'imgs/thumb-web.png' %}" alt="">
+          <img class="thumb" src="{% static 'imgs/thumb-web.png' %}" alt="" />
           <h6>Programmers</h6>
         </a>
       </li>
 
       <li class="list-link-item">
         <a href="https://programmers.co.kr/design/main" target="_blank">
-          <img class="thumb" src="{% static 'imgs/thumb-system.png' %}" alt="">
+          <img class="thumb" src="{% static 'imgs/thumb-system.png' %}" alt="" />
           <h6>Design system</h6>
-
         </a>
       </li>
     </ul>
@@ -51,25 +44,18 @@
 
     <div class="content">
       <p class="description">
-        2019년. Dart에서 기업 재무제표를 조회하는 일은 정말 불편했습니다.
-        이를 해결하기 위해 기업 종목 코드를 입력하면 최근 재무제표를 바로 조회할 수 있는
-        웹 애플리케이션을 개발했습니다.
-        Dart Open API에서 정보를 받았으며, Beautiful Soup, Pandas을 활용하여 Python으로 개발했습니다.
+        2019년. Dart에서 기업 재무제표를 조회하는 일은 정말 불편했습니다. 이를 해결하기 위해 기업 종목 코드를 입력하면 최근 재무제표를 바로 조회할 수 있는 웹 애플리케이션을 개발했습니다. Dart Open API에서 정보를 받았으며, Beautiful Soup, Pandas을 활용하여 Python으로 개발했습니다.
       </p>
 
       <div class="video-frame">
-        <iframe src="https://www.youtube.com/embed/bolDxdfxOVE?&autoplay=1&loop=1&playlist=bolDxdfxOVE&modestbranding=1&disablekb=1"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/bolDxdfxOVE?&autoplay=1&loop=1&playlist=bolDxdfxOVE&modestbranding=1&disablekb=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
       </div>
     </div>
 
     <ul class="list-links">
       <li class="list-link-item">
         <a href="https://github.com/los0731/fs_search" target="_blank">
-          <img class="thumb" src="{% static 'imgs/thumb-code.png' %}" alt="">
+          <img class="thumb" src="{% static 'imgs/thumb-code.png' %}" alt="" />
           <h6>Github Repo</h6>
         </a>
       </li>
@@ -81,31 +67,30 @@
 
     <div class="content">
       <p class="description">
-        2019년에 온라인에서 직접 코드를 입력하면서 HTML/CSS 프로젝트를 진행할 수 있는 튜토리얼 코스를 만들었습니다.
-        Beautiful Soup과 정규표현식으로 학습자의 코드가 옳은지 체크하는 테스트 케이스를 작성하여 학습자가 봇과 페어 프로그래밍 하듯
-        프로젝트를 만들어나갈 수 있도록 했습니다. 강의를 게재한 Next.xyz에는 작가 등록이 되어있습니다.
+        2019년에 온라인에서 직접 코드를 입력하면서 HTML/CSS 프로젝트를 진행할 수 있는 튜토리얼 코스를 만들었습니다. Beautiful Soup과 정규표현식으로 학습자의 코드가 옳은지 체크하는 테스트 케이스를 작성하여 학습자가 봇과 페어 프로그래밍 하듯 프로젝트를 만들어나갈 수 있도록 했습니다. 강의를 게재한
+        Next.xyz에는 작가 등록이 되어있습니다.
       </p>
 
-      <img src="{% static 'imgs/img-html-1.png' %}" alt="코스 이미지">
+      <img src="{% static 'imgs/img-html-1.png' %}" alt="코스 이미지" />
 
       <!--<div class="video-frame">-->
-        <!--<iframe src="https://www.youtube.com/embed/_Ahd9sfTeMY?&autoplay=1&loop=1&playlist=bolDxdfxOVE&modestbranding=1&disablekb=1"-->
-                <!--frameborder="0"-->
-                <!--allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
-                <!--allowfullscreen>-->
-        <!--</iframe>-->
+      <!--<iframe src="https://www.youtube.com/embed/_Ahd9sfTeMY?&autoplay=1&loop=1&playlist=bolDxdfxOVE&modestbranding=1&disablekb=1"-->
+      <!--frameborder="0"-->
+      <!--allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+      <!--allowfullscreen>-->
+      <!--</iframe>-->
       <!--</div>-->
 
       <video autoplay loop muted poster="{% static 'imgs/img-html-poster.png' %}">
-        <source src="{% static 'imgs/video_html.mp4' %}" type="video/mp4"/>
-        <source src="{% static 'imgs/video_html.webm' %}" type="video/webm"/>
+        <source src="{% static 'imgs/video_html.mp4' %}" type="video/mp4" />
+        <source src="{% static 'imgs/video_html.webm' %}" type="video/webm" />
       </video>
     </div>
 
     <ul class="list-links">
       <li class="list-link-item">
         <a href="https://next.tech/xyz/hands-on-projects-for-html-and-css" target="_blank">
-          <img class="thumb" src="{% static 'imgs/thumb-keynote.png' %}" alt="">
+          <img class="thumb" src="{% static 'imgs/thumb-keynote.png' %}" alt="" />
           <h6>Course info</h6>
         </a>
       </li>
@@ -117,19 +102,17 @@
 
     <div class="content">
       <p class="description">
-        2018년에 친구의 토이프로젝트인 RetroSpin을 디자인했습니다.
-        RetroSpin은 회고를 진행하는 애자일 팀들을 위한 온라인 회고 툴로서 개인 또는 팀의 회고가 가능하게 하고,
-        지속적으로 회고할 수 있도록 기록해주는 기능을 제공합니다.
+        2018년에 친구의 토이프로젝트인 RetroSpin을 디자인했습니다. RetroSpin은 회고를 진행하는 애자일 팀들을 위한 온라인 회고 툴로서 개인 또는 팀의 회고가 가능하게 하고, 지속적으로 회고할 수 있도록 기록해주는 기능을 제공합니다.
       </p>
 
-      <img src="{% static 'imgs/img-retrospin-1.png' %}" alt="레트로스핀 설명 이미지 1">
-      <img src="{% static 'imgs/img-retrospin-2.png' %}" alt="레트로스핀 설명 이미지 2">
+      <img src="{% static 'imgs/img-retrospin-1.png' %}" alt="레트로스핀 설명 이미지 1" />
+      <img src="{% static 'imgs/img-retrospin-2.png' %}" alt="레트로스핀 설명 이미지 2" />
     </div>
 
     <ul class="list-links">
       <li class="list-link-item">
         <a href="https://retrospin.io/" target="_blank">
-          <img class="thumb" src="{% static 'imgs/thumb-web.png' %}" alt="">
+          <img class="thumb" src="{% static 'imgs/thumb-web.png' %}" alt="" />
           <h6>Retrospin (개발중)</h6>
         </a>
       </li>
@@ -141,20 +124,18 @@
 
     <div class="content">
       <p class="description">
-        2016년에 설계한 Hashcode는 7000개 이상의 S/W 개발 인사이트와,
-        매월 15만 명의 개발자가 방문하는 프로그래밍 Q&A 서비스입니다.
-        2018년에 목록 및 질문 콘텐츠의 가독성 향상을 위하여 디자인을 리뉴얼했습니다.
+        2016년에 설계한 Hashcode는 7000개 이상의 S/W 개발 인사이트와, 매월 15만 명의 개발자가 방문하는 프로그래밍 Q&A 서비스입니다. 2018년에 목록 및 질문 콘텐츠의 가독성 향상을 위하여 디자인을 리뉴얼했습니다.
       </p>
 
-      <img src="{% static 'imgs/img-hashcode-1.png' %}" alt="해시코드 설명 이미지 1">
-      <img src="{% static 'imgs/img-hashcode-2.png' %}" alt="해시코드 설명 이미지 2">
-      <img src="{% static 'imgs/img-hashcode-3.png' %}" alt="해시코드 설명 이미지 3">
+      <img src="{% static 'imgs/img-hashcode-1.png' %}" alt="해시코드 설명 이미지 1" />
+      <img src="{% static 'imgs/img-hashcode-2.png' %}" alt="해시코드 설명 이미지 2" />
+      <img src="{% static 'imgs/img-hashcode-3.png' %}" alt="해시코드 설명 이미지 3" />
     </div>
 
     <ul class="list-links">
       <li class="list-link-item">
         <a href="https://hashcode.co.kr/" target="_blank">
-          <img class="thumb" src="{% static 'imgs/thumb-web.png' %}" alt="">
+          <img class="thumb" src="{% static 'imgs/thumb-web.png' %}" alt="" />
           <h6>Hashcode</h6>
         </a>
       </li>
@@ -162,16 +143,15 @@
   </li>
 
   <li class="project-item" id="project_faces">
-      <h5 class="label number">In your Face</h5>
+    <h5 class="label number">In your Face</h5>
 
     <div class="content">
       <p class="description">
-        개인 프로젝트로 친구, 지인, 처음 만난 사람, 팀 동료들의 얼굴을 그렸습니다.
-        이 아이디어는 팀원들의 호응으로 Grepp 명함의 콘셉트가 되었으며, 지금도 계속해서 그리고 있습니다.
+        개인 프로젝트로 친구, 지인, 처음 만난 사람, 팀 동료들의 얼굴을 그렸습니다. 이 아이디어는 팀원들의 호응으로 Grepp 명함의 콘셉트가 되었으며, 지금도 계속해서 그리고 있습니다.
       </p>
 
-      <img src="{% static 'imgs/img-illust-1.png' %}" alt="일러스트레이션 이미지 1">
-      <img src="{% static 'imgs/img-illust-2.jpg' %}" alt="일러스트레이션 이미지 1">
+      <img src="{% static 'imgs/img-illust-1.png' %}" alt="일러스트레이션 이미지 1" />
+      <img src="{% static 'imgs/img-illust-2.jpg' %}" alt="일러스트레이션 이미지 1" />
     </div>
   </li>
 
@@ -181,29 +161,26 @@
 
     <div class="content">
       <p class="description">
-        2016년에 망각 곡선을 활용하여 더 효율적으로 암기를 도와주는 웹 플래시카드 서비스 Rememberit을 디자인했습니다.
-        크롬 익스텐션을 지원하는 Rememberit은 웹에서 모르는 단어를 바로 저장할 수 있고, cambridge 외
-        6개의 주요 사전 서비스에서 직접 스크랩하도록 도와줍니다.
+        2016년에 망각 곡선을 활용하여 더 효율적으로 암기를 도와주는 웹 플래시카드 서비스 Rememberit을 디자인했습니다. 크롬 익스텐션을 지원하는 Rememberit은 웹에서 모르는 단어를 바로 저장할 수 있고, cambridge 외 6개의 주요 사전 서비스에서 직접 스크랩하도록 도와줍니다.
       </p>
 
       <div class="rmmbrit-gif-wrap">
-        <img src="{% static 'imgs/img-rmmbrit-1.gif' %}" alt="리멤버잇 이미지 1">
+        <img src="{% static 'imgs/img-rmmbrit-1.gif' %}" alt="리멤버잇 이미지 1" />
       </div>
 
-      <img src="{% static 'imgs/img-rmmbrit-2.png' %}" alt="리멤버잇 이미지 1">
+      <img src="{% static 'imgs/img-rmmbrit-2.png' %}" alt="리멤버잇 이미지 1" />
     </div>
 
     <ul class="list-links">
       <li class="list-link-item">
         <a href="https://goo.gl/QKICzU" target="_blank">
-          <img class="thumb" src="{% static 'imgs/thumb-extention.png' %}" alt="">
+          <img class="thumb" src="{% static 'imgs/thumb-extention.png' %}" alt="" />
           <h6>Chrome extension</h6>
         </a>
       </li>
     </ul>
   </li>
   {% endif %}
-
 </ol>
 
 {% if posts %}
@@ -217,7 +194,4 @@
     {% endfor %}
   </ul>
 </div>
-{% endif %}
-{% endblock %}
-
-
+{% endif %} {% endblock %}
