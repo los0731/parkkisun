@@ -11,7 +11,8 @@ footer {
   padding: 16px 0;
   margin-top: 120px;
 
-  a, h6 {
+  a,
+  h6 {
     @include h6;
     font-weight: 700;
 
@@ -19,7 +20,6 @@ footer {
       @include h7;
     }
   }
-
 
   a {
     color: $color-text--primary;
@@ -61,7 +61,9 @@ footer {
     &.btn-post-new {
       color: $color-primary;
 
-      &:hover {color: $color-primary--hover;}
+      &:hover {
+        color: $color-primary--hover;
+      }
     }
   }
 
@@ -75,7 +77,6 @@ footer {
     @media ($lg-down) {
       padding-left: 16px;
     }
-
   }
 }
 
@@ -99,7 +100,13 @@ footer {
     margin-top: 40px;
     margin-bottom: 40px;
 
-    &:first-child {margin-top: 0;}
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  img {
+    box-shadow: 0 8px 24px 8px rgba(50, 50, 80, 0.08);
   }
 
   video {
@@ -107,12 +114,20 @@ footer {
     margin: 40px 0;
   }
 
-  h1, h2, h3, h4, h5 {
-    margin-bottom: 24px;
+  h5,
+  p,
+  ul,
+  ol,
+  pre {
+    margin-bottom: 20px;
   }
 
-  h1, h2, h3, h4 {
-    margin-top: 80px;
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 96px;
+    margin-bottom: 32px;
 
     &:first-child {
       margin-top: 0;
@@ -124,7 +139,6 @@ footer {
     & + h4 {
       margin-top: 24px;
     }
-
   }
 
   h1 {
@@ -161,16 +175,16 @@ footer {
   }
 
   h6 {
-    @media ($lg-down) {
-      @include h7;
-    }
+    text-align: center;
+    @include h7;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  p, ul, ol, pre {
-    margin-bottom: 24px;
-  }
-
-  p, li {
+  p,
+  li {
+    letter-spacing: -0.2px;
     @include paragraph;
 
     @media ($lg-down) {
@@ -178,8 +192,11 @@ footer {
     }
   }
 
-  ul, ol {
-    ul, ol, li + li {
+  ul,
+  ol {
+    ul,
+    ol,
+    li + li {
       margin-top: 8px;
       margin-bottom: 0;
     }
@@ -191,11 +208,17 @@ footer {
 
   blockquote {
     @include h4;
-    border-color: $color-border;
-    padding-left: 20px;
+    border: 1px solid $color-border;
+    border-radius: 16px;
+    padding: 24px 32px;
+    margin-bottom: 40px;
 
-    p {
-      margin-bottom: 0;
+    p,
+    ul,
+    ol {
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     blockquote {
@@ -207,7 +230,8 @@ footer {
     }
   }
 
-  code, pre {
+  code,
+  pre {
     @include font-mono;
     background-color: $blue-grey-50;
     border: 0;
@@ -228,9 +252,21 @@ footer {
     }
   }
 
-  p:first-child, hr:first-child {
-    &, h1, h2, h3, h4, h5, h6, p, blockquote,
-    ul, ol, pre, img {
+  p:first-child,
+  hr:first-child {
+    &,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    ul,
+    ol,
+    pre,
+    img {
       margin-top: 0;
     }
   }
@@ -261,7 +297,7 @@ footer,
     position: relative;
     &:after {
       @include h4;
-      content: '↗';
+      content: "↗";
       position: absolute;
       color: $blue-grey-100;
       bottom: 24px;
@@ -271,7 +307,9 @@ footer,
         bottom: 10px;
       }
 
-      @media ($lg-down) {display: none;}
+      @media ($lg-down) {
+        display: none;
+      }
     }
   }
 
@@ -283,7 +321,7 @@ footer,
     color: $color-text--primary;
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       height: 16px;
     }
@@ -324,7 +362,7 @@ footer,
     }
   }
 
-  .number{
+  .number {
     //position: sticky;
     //top: 0;
 
@@ -356,7 +394,8 @@ footer,
     }
 
     .video-frame,
-    img, video {
+    img,
+    video {
       width: 100%;
       margin: 0 0 24px 0;
 
@@ -378,7 +417,7 @@ footer,
 
     .rmmbrit-gif-wrap {
       padding: 80px 240px;
-      background-color: #B8CADB;
+      background-color: #b8cadb;
       margin: 0 0 24px 0;
       width: 100%;
 
@@ -390,7 +429,7 @@ footer,
       }
 
       img {
-        box-shadow: 40px 60px 80px rgba(35,36,102,.12);
+        box-shadow: 40px 60px 80px rgba(35, 36, 102, 0.12);
       }
     }
   }
@@ -452,7 +491,7 @@ footer,
       }
 
       &::after {
-        content: ' ↗';
+        content: " ↗";
       }
     }
   }
@@ -470,7 +509,7 @@ footer,
     margin-bottom: 16px;
     &:after {
       @include h4;
-      content: '↗';
+      content: "↗";
       position: absolute;
       color: $blue-grey-100;
       bottom: 24px;
@@ -480,7 +519,9 @@ footer,
         bottom: 10px;
       }
 
-      @media ($lg-down) {display: none;}
+      @media ($lg-down) {
+        display: none;
+      }
     }
   }
 
@@ -493,7 +534,7 @@ footer,
     word-spacing: -2px;
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       height: 16px;
     }
@@ -506,7 +547,7 @@ footer,
       @include h5;
       margin-top: 16px;
       line-height: 1.4;
-      color: $color-text--primary ;
+      color: $color-text--primary;
 
       &:hover {
         color: $color-primary;
@@ -517,7 +558,7 @@ footer,
 
 .post-detail {
   @include margin-top--common;
-  max-width: 767px;
+  max-width: 800px;
   margin: 0 auto;
 
   .title {
@@ -545,7 +586,6 @@ footer,
 
     .video-frame,
     img {
-
       @media ($lg-down) {
         margin-left: -24px;
         width: calc(100% + 48px);
@@ -553,22 +593,9 @@ footer,
       }
 
       @media ($lg-up) {
-        margin-left: -80px;
-        width: calc(100% + 160px);
-      }
-
-      @media ($xl-up) {
-        margin-left: -200px;
-        width: calc(100% + 400px);
-        margin-top: 56px;
-        margin-bottom: 56px;
-      }
-
-      @media ($xxl-up) {
-        margin-left: -456px;
-        width: calc(100% + 912px);
-        margin-top: 64px;
-        margin-bottom: 64px;
+        margin-left: calc((100vw - 800px) / -2);
+        width: 100vw;
+        border-radius: 0;
       }
     }
 
@@ -614,7 +641,11 @@ footer,
     @include linkable-inline;
   }
 
-  br.xxl-down { @media ($xxl-down) {display: none;} }
+  br.xxl-down {
+    @media ($xxl-down) {
+      display: none;
+    }
+  }
 }
 
 .about--items {
@@ -637,7 +668,7 @@ footer,
       padding-left: 14px;
 
       &:before {
-        content: '';
+        content: "";
         width: 6px;
         height: 6px;
         position: absolute;
@@ -760,7 +791,7 @@ footer,
 
         a {
           display: block;
-          transition: .6s;
+          transition: 0.6s;
           color: white;
           box-shadow: inset 0 0 $point-red;
 
@@ -870,13 +901,12 @@ footer,
       background-color: $blue-grey-900;
     }
 
-
     .index-item {
       @include h7;
 
       a {
         color: $blue-grey-200;
-        opacity: .6;
+        opacity: 0.6;
 
         @media ($lg-down) {
           width: 25vw;
@@ -935,11 +965,16 @@ footer,
   }
 
   .markdown {
-    p, ul, ol, pre {
+    p,
+    ul,
+    ol,
+    pre {
       margin-bottom: 16px;
     }
 
-    p, li, h5 {
+    p,
+    li,
+    h5 {
       font-size: 16px;
       line-height: 1.8;
     }
@@ -957,15 +992,18 @@ footer,
     img {
       border-radius: 3px;
 
-      &:first-child {margin-top: 0;}
-      &:last-child {margin-bottom: 0;}
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       & + img,
       & + video,
       & + .video-frame {
         margin-top: -32px;
       }
-
     }
   }
 
@@ -991,6 +1029,3 @@ footer,
     margin-top: 64px;
   }
 }
-
-
-

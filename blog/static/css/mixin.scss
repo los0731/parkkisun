@@ -1,7 +1,7 @@
 @import "varibales";
 @import "fonts";
 
-@mixin transition($transition-duration:.16s, $transition-property:all, $transition-timing-function:ease-in-out, $transition-delay:initial) {
+@mixin transition($transition-duration: 0.16s, $transition-property: all, $transition-timing-function: ease-in-out, $transition-delay: initial) {
   transition-duration: $transition-duration;
   transition-property: $transition-property;
   transition-timing-function: $transition-timing-function;
@@ -13,27 +13,27 @@
 }
 
 @mixin font-default {
-  font-family: "Inter", 'Noto Sans KR', "Helvetica Neue", Helvetica, Arial, "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif, "Apple Color Emoji", "Noto Color Emoji";
+  font-family: "Inter", "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif, "Apple Color Emoji", "Noto Color Emoji";
 }
 
 @mixin font-mono {
-  font-family: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace, "맑은 고딕", malgun gothic, "돋움", Dotum, Sans-Serif;
+  font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace, "맑은 고딕", malgun gothic, "돋움", Dotum, Sans-Serif;
 }
 
 @mixin h1 {
-  font-size: 64px;
+  font-size: 56px;
   line-height: 1.4;
   word-spacing: -4px;
 }
 
 @mixin h2 {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.4;
   word-spacing: -2px;
 }
 
 @mixin h3 {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.4;
   word-spacing: -2px;
 }
@@ -60,8 +60,8 @@
 
 @mixin paragraph {
   font-size: 20px;
-  line-height: 1.9;
-  word-spacing: -1px;
+  line-height: 1.8;
+  word-spacing: -0.6px;
 }
 
 @mixin container {
@@ -149,7 +149,7 @@
   }
 }
 
-@mixin fadeIn($delay: .6s) {
+@mixin fadeIn($delay: 0.6s) {
   @keyframes fadeIn {
     from {
       opacity: 0;
